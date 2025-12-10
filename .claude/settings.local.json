@@ -4,7 +4,10 @@
       "WebSearch",
       "WebFetch(domain:mini-hops.com)",
       "WebFetch(domain:www.sierraadaptivegymnastics.com)",
-      "WebFetch(domain:fitfoxmarketing.com)"
+      "WebFetch(domain:fitfoxmarketing.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }

@@ -4,14 +4,44 @@ title: Born2Fly Gymnastics | Adaptive Gymnastics for Every Child in KwaZulu-Nata
 description: "Specialist adaptive gymnastics services bringing confidence, hope, and possibilities to children of all abilities across KwaZulu-Natal schools."
 ---
 
-<!-- Image Carousel Section -->
-<section class="carousel-section">
-  <div class="container">
-    <div class="section-header text-center" style="margin-bottom: 2rem;">
-      <h2>See Us in Action</h2>
-      <p class="section-subtitle">Empowering children through adaptive gymnastics across KwaZulu-Natal</p>
+<!-- Hero Carousel Section -->
+<section class="hero-carousel">
+  <div class="carousel">
+    <div class="carousel-track">
+      {% for image in site.data.carousel %}
+      <div class="carousel-slide">
+        <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}">
+        <div class="carousel-overlay"></div>
+      </div>
+      {% endfor %}
     </div>
-    {% include carousel.html images=site.data.carousel %}
+
+    <div class="hero-carousel-content">
+      <h1 class="hero-title">Where Every Child Can Fly</h1>
+      <p class="hero-subtitle">Specialist gymnastics bringing confidence, hope, and endless possibilities to children of all abilities across KwaZulu-Natal</p>
+      <div class="hero-cta">
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Get in Touch</a>
+        <a href="{{ '/services/' | relative_url }}" class="btn btn-outline btn-lg">Our Services</a>
+      </div>
+    </div>
+
+    <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <button class="carousel-btn carousel-btn-next" aria-label="Next slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+
+    <div class="carousel-dots">
+      {% for image in site.data.carousel %}
+      <button class="carousel-dot{% if forloop.first %} active{% endif %}" aria-label="Go to slide {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
