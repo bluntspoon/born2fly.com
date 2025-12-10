@@ -1,0 +1,19 @@
+<section class="hero" role="banner">
+  <div class="hero-background">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">{{ include.title }}</h1>
+    <p class="hero-subtitle">{{ include.subtitle }}</p>
+
+    <div class="hero-cta">
+      <a href="{{ include.cta_link | relative_url }}" class="btn btn-primary btn-lg">
+        {{ include.cta_text }}
+      </a>
+      <a href="{{ '/services/' | relative_url }}" class="btn btn-outline btn-lg">
+        Our Services
+      </a>
+    </div>
+  </div>
+</section>

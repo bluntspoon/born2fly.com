@@ -1,0 +1,8 @@
+<!-- This is a placeholder for Open Graph social sharing image -->
+<!-- SVG placeholder -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#1a365d"/>
+  <text x="600" y="280" font-family="Arial" font-size="60" fill="#e53e3e" text-anchor="middle" font-weight="bold">Born2Fly Gymnastics</text>
+  <text x="600" y="350" font-family="Arial" font-size="30" fill="white" text-anchor="middle">Where Every Child Can Fly</text>
+  <text x="600" y="400" font-family="Arial" font-size="24" fill="white" text-anchor="middle" opacity="0.9">Adaptive Gymnastics | KwaZulu-Natal</text>
+</svg>

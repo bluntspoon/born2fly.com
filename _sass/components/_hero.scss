@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-white;
+  overflow: hidden;
+
+  // Background with gradient fallback
+  &-background {
+    @include absolute-cover;
+    background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+    z-index: -2;
+
+    // Placeholder image background
+    &::before {
+      content: '';
+      @include absolute-cover;
+      background-image: url('/assets/images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+    }
+  }
+
+  &-overlay {
+    @include absolute-cover;
+    background: linear-gradient(
+      180deg,
+      rgba($color-primary-dark, 0.7) 0%,
+      rgba($color-primary, 0.8) 100%
+    );
+    z-index: -1;
+  }
+
+  &-content {
+    @include container;
+    max-width: 900px;
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+
+    @include md {
+      padding-top: $spacing-5xl;
+      padding-bottom: $spacing-5xl;
+    }
+  }
+
+  &-title {
+    font-family: $font-heading;
+    font-size: $font-size-4xl;
+    font-weight: $font-weight-extrabold;
+    line-height: $line-height-tight;
+    margin-bottom: $spacing-lg;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    @include lg {
+      font-size: $font-size-5xl;
+    }
+  }
+
+  &-subtitle {
+    font-size: $font-size-lg;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-2xl;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include md {
+      font-size: $font-size-xl;
+      margin-bottom: $spacing-3xl;
+    }
+  }
+
+  &-cta {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    align-items: center;
+
+    @include sm {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .btn {
+      min-width: 200px;
+    }
+  }
+}

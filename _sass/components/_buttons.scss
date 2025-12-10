@@ -1,0 +1,124 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-xl;
+  font-family: $font-heading;
+  font-size: $font-size-base;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: all $transition-base;
+  white-space: nowrap;
+
+  &:focus-visible {
+    outline: 3px solid rgba($color-accent, 0.5);
+    outline-offset: 2px;
+  }
+
+  // Primary (Red accent)
+  &-primary {
+    background: $color-accent;
+    color: $color-white;
+    border-color: $color-accent;
+
+    &:hover {
+      background: $color-accent-dark;
+      border-color: $color-accent-dark;
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  // Secondary (Dark blue)
+  &-secondary {
+    background: $color-primary;
+    color: $color-white;
+    border-color: $color-primary;
+
+    &:hover {
+      background: $color-primary-light;
+      border-color: $color-primary-light;
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  // Outline variant
+  &-outline {
+    background: transparent;
+    color: $color-white;
+    border-color: $color-white;
+
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+    }
+
+    &.btn-outline-dark {
+      color: $color-primary;
+      border-color: $color-primary;
+
+      &:hover {
+        background: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
+
+  // WhatsApp button
+  &-whatsapp {
+    background: #25d366;
+    color: $color-white;
+    border-color: #25d366;
+
+    &:hover {
+      background: #20ba59;
+      border-color: #20ba59;
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    svg,
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // Size variants
+  &-lg {
+    padding: $spacing-lg $spacing-2xl;
+    font-size: $font-size-lg;
+  }
+
+  &-sm {
+    padding: $spacing-sm $spacing-lg;
+    font-size: $font-size-sm;
+  }
+
+  // Full width on mobile
+  &-block {
+    width: 100%;
+
+    @include sm {
+      width: auto;
+    }
+  }
+}

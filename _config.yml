@@ -1,0 +1,79 @@
+# Site Settings
+title: Born2Fly Gymnastics
+description: "Empowering every child through gymnastics. Specialist adaptive gymnastics services bringing confidence, hope, and possibilities to schools across KwaZulu-Natal."
+tagline: "Where Every Child Can Fly"
+url: "https://born2fly.com"
+baseurl: ""
+author: "Born2Fly Gymnastics"
+
+# Contact Information
+email: info@born2fly.com
+phone_moses: "+27 76 547 1668"
+phone_aidan: "+27 64 653 0036"
+location: "KwaZulu-Natal, South Africa"
+
+# Social Media (add when available)
+social:
+  facebook: ""
+  instagram: ""
+  whatsapp_moses: "+27765471668"
+  whatsapp_aidan: "+27646530036"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Sass Configuration
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+  - .claude
+
+# Default front matter for SEO
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+    values:
+      image: "/assets/images/team.jpeg"
+
+# Form Configuration (update after setting up Formspree)
+formspree_id: ""
+
+# SEO Settings
+lang: en
+locale: en_ZA
+twitter:
+  card: summary_large_image
+logo: /assets/images/logo.jpeg
+
+# Schema.org settings
+organization:
+  name: "Born2Fly Gymnastics"
+  legal_name: "Born2Fly Gymnastics"
+  description: "Specialist adaptive gymnastics programs for schools, focusing on children of all abilities"
+  service_type:
+    - "Adaptive Gymnastics"
+    - "School Gymnastics Programs"
+    - "Inclusive Sports"
+  area_served: "KwaZulu-Natal, South Africa"

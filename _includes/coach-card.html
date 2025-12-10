@@ -1,0 +1,23 @@
+<article class="coach-card">
+  <div class="coach-image">
+    <img
+      src="{{ include.coach.image | relative_url }}"
+      alt="{{ include.coach.name }}"
+      loading="lazy"
+      width="300"
+      height="300"
+    >
+  </div>
+  <div class="coach-info">
+    <h3 class="coach-name">{{ include.coach.name }}</h3>
+    <p class="coach-role">{{ include.coach.role }}</p>
+    <p class="coach-bio">{{ include.coach.bio }}</p>
+    {% if include.coach.specialties %}
+    <ul class="coach-specialties">
+      {% for specialty in include.coach.specialties %}
+      <li>{{ specialty }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</article>

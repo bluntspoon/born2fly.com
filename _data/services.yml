@@ -1,0 +1,39 @@
+- title: School Programs
+  icon: "🏫"
+  description: "Bringing adaptive gymnastics directly to schools across KwaZulu-Natal. Our tailored programs integrate seamlessly with your curriculum and support every student's physical development."
+  features:
+    - Curriculum-aligned sessions
+    - All equipment provided
+    - Flexible scheduling
+    - Progress reports & feedback
+    - Qualified, background-checked coaches
+
+- title: Inclusive Group Sessions
+  icon: "👥"
+  description: "Fun, engaging group classes designed for children of all abilities. Building confidence, coordination, and friendships together in a supportive environment."
+  features:
+    - Small group sizes
+    - Adapted activities for all abilities
+    - Supportive, encouraging atmosphere
+    - Social skill development
+    - Age-appropriate programs
+
+- title: Individual Coaching
+  icon: "⭐"
+  description: "One-on-one sessions focused on your child's unique goals and abilities. Personalized programs that celebrate every achievement and build on individual strengths."
+  features:
+    - Tailored programs
+    - Goal-oriented approach
+    - Parent involvement & communication
+    - Detailed progress tracking
+    - Flexible scheduling
+
+- title: Holiday Camps
+  icon: "🎉"
+  description: "Action-packed holiday programs that keep children active, engaged, and having fun during school breaks. A perfect blend of learning, movement, and social interaction."
+  features:
+    - Full-day or half-day options
+    - Multiple activities & games
+    - New friendships & experiences
+    - Skill development focus
+    - Safe, supervised environment

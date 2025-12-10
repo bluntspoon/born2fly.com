@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}",
+  "telephone": "{{ site.phone_moses }}",
+  "email": "{{ site.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "KwaZulu-Natal",
+    "addressCountry": "ZA"
+  },
+  "priceRange": "$$",
+  "serviceType": {{ site.organization.service_type | jsonify }},
+  "areaServed": {
+    "@type": "State",
+    "name": "KwaZulu-Natal"
+  },
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Coach Moses",
+      "jobTitle": "Head Coach & Founder"
+    }
+  ]
+}
+</script>

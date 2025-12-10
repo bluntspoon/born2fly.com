@@ -1,0 +1,93 @@
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: $spacing-lg;
+
+  label {
+    display: block;
+    font-family: $font-heading;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: $spacing-md;
+    font-family: $font-body;
+    font-size: $font-size-base;
+    color: $color-gray-800;
+    background: $color-white;
+    border: 2px solid $color-gray-300;
+    border-radius: $radius-md;
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+      box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
+    }
+
+    &::placeholder {
+      color: $color-gray-400;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+}
+
+.form-error {
+  color: $color-error;
+  font-size: $font-size-sm;
+  margin-top: $spacing-sm;
+}
+
+.form-success {
+  padding: $spacing-lg;
+  background: rgba($color-success, 0.1);
+  border: 2px solid $color-success;
+  border-radius: $radius-md;
+  color: $color-success;
+  text-align: center;
+  margin-bottom: $spacing-xl;
+}
+
+// WhatsApp contact section
+.whatsapp-contact {
+  margin: $spacing-3xl 0;
+  padding: $spacing-2xl;
+  background: $color-off-white;
+  border-radius: $radius-lg;
+  text-align: center;
+
+  h3 {
+    margin-bottom: $spacing-lg;
+    color: $color-primary;
+  }
+
+  p {
+    color: $color-gray-600;
+    margin-bottom: $spacing-xl;
+  }
+
+  .whatsapp-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include sm {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

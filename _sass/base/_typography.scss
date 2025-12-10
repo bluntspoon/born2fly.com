@@ -1,0 +1,164 @@
+// Typography Base Styles
+body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: $color-gray-800;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $color-primary;
+  margin-bottom: $spacing-md;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-extrabold;
+
+  @include md {
+    font-size: $font-size-5xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+
+  @include md {
+    font-size: $font-size-4xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+
+  @include md {
+    font-size: $font-size-3xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-xl;
+
+  @include md {
+    font-size: $font-size-2xl;
+  }
+}
+
+h5 {
+  font-size: $font-size-lg;
+
+  @include md {
+    font-size: $font-size-xl;
+  }
+}
+
+h6 {
+  font-size: $font-size-base;
+
+  @include md {
+    font-size: $font-size-lg;
+  }
+}
+
+// Paragraphs
+p {
+  margin-bottom: $spacing-md;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Links
+a {
+  color: $color-accent;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent-dark;
+  }
+}
+
+// Strong and emphasis
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+// Lists
+ul,
+ol {
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-xl;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: $spacing-sm;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Blockquote
+blockquote {
+  margin: $spacing-xl 0;
+  padding-left: $spacing-xl;
+  border-left: 4px solid $color-accent;
+  font-style: italic;
+  color: $color-gray-600;
+}
+
+// Small text
+small {
+  font-size: $font-size-sm;
+}
+
+// Code
+code {
+  font-family: 'Courier New', monospace;
+  background: $color-gray-100;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-sm;
+  font-size: 0.9em;
+}
+
+pre {
+  background: $color-gray-100;
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  overflow-x: auto;
+  margin-bottom: $spacing-md;
+
+  code {
+    background: none;
+    padding: 0;
+  }
+}

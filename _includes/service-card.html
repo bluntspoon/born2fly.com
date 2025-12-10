@@ -1,0 +1,14 @@
+<article class="service-card">
+  <div class="service-icon">
+    <span style="font-size: 48px;">{{ include.service.icon }}</span>
+  </div>
+  <h3>{{ include.service.title }}</h3>
+  <p class="service-description">{{ include.service.description }}</p>
+  {% if include.service.features %}
+  <ul class="service-features">
+    {% for feature in include.service.features %}
+    <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>

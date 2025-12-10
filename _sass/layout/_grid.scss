@@ -1,0 +1,35 @@
+// Container
+.container {
+  @include container;
+}
+
+// Two column layout
+.two-column {
+  display: grid;
+  gap: $spacing-2xl;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-3xl;
+    align-items: center;
+  }
+}
+
+// Content with sidebar
+.content-with-sidebar {
+  display: grid;
+  gap: $spacing-2xl;
+
+  @include lg {
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing-3xl;
+  }
+}
+
+// Full width section
+.full-width {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}

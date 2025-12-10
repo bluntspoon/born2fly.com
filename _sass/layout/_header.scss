@@ -1,0 +1,9 @@
+// Header specific layout styles (additional to navigation component)
+.site-header {
+  // Sticky header adjustments
+  backdrop-filter: blur(10px);
+
+  @supports not (backdrop-filter: blur(10px)) {
+    background: rgba($color-white, 0.98);
+  }
+}

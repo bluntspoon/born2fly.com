@@ -1,0 +1,19 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Born2Fly - Home">
+      <img src="{{ '/assets/images/logo.jpeg' | relative_url }}" alt="Born2Fly Gymnastics" width="180" height="50">
+    </a>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="mobile-nav-toggle">
+      <span class="hamburger"></span>
+    </button>
+
+    {% include nav.html %}
+
+    <a href="{{ '/contact/' | relative_url }}" class="header-cta btn btn-primary">
+      Contact Us
+    </a>
+  </div>
+</header>

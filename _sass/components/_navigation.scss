@@ -1,0 +1,172 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: $z-sticky;
+  background: $color-white;
+  box-shadow: $shadow-md;
+  padding: $spacing-md 0;
+
+  @include md {
+    padding: $spacing-lg 0;
+  }
+}
+
+.header-inner {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-xl;
+}
+
+.site-logo {
+  display: block;
+  flex-shrink: 0;
+
+  img {
+    height: 40px;
+    width: auto;
+
+    @include md {
+      height: 50px;
+    }
+  }
+}
+
+// Mobile nav toggle
+.mobile-nav-toggle {
+  @include button-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: $spacing-xs;
+  z-index: $z-fixed + 1;
+
+  @include md {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background: $color-primary;
+    transition: background $transition-fast;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $color-primary;
+      transition: transform $transition-base;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .hamburger {
+      background: transparent;
+
+      &::before {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+// Main navigation
+.main-nav {
+  @include max-md {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $color-white;
+    z-index: $z-fixed;
+    padding: $spacing-4xl $spacing-xl;
+    transform: translateX(-100%);
+    transition: transform $transition-base;
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+
+  @include md {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  @include md {
+    flex-direction: row;
+    gap: $spacing-xl;
+  }
+}
+
+.nav-item {
+  a {
+    display: block;
+    font-family: $font-heading;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+    transition: color $transition-fast;
+
+    @include md {
+      font-size: $font-size-base;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-accent;
+    }
+  }
+
+  &.active a {
+    color: $color-accent;
+    position: relative;
+
+    @include md {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $color-accent;
+      }
+    }
+  }
+}
+
+// Header CTA button
+.header-cta {
+  display: none;
+
+  @include lg {
+    display: inline-flex;
+  }
+}

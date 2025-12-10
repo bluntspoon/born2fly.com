@@ -1,0 +1,58 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-content">
+    <div class="footer-section footer-about">
+      <h4>Born2Fly Gymnastics</h4>
+      <p>{{ site.tagline }}</p>
+      <p>{{ site.description }}</p>
+    </div>
+
+    <div class="footer-section footer-links-section">
+      <h4>Quick Links</h4>
+      <ul>
+        {% for item in site.data.navigation.main %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="footer-section footer-contact">
+      <h4>Contact Us</h4>
+      <div class="contact-item">
+        <span class="icon">📧</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div class="contact-item">
+        <span class="icon">📱</span>
+        <div>
+          <div><strong>Coach Moses:</strong> <a href="tel:{{ site.phone_moses }}">{{ site.phone_moses }}</a></div>
+          <div><strong>Coach Aidan:</strong> <a href="tel:{{ site.phone_aidan }}">{{ site.phone_aidan }}</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="icon">📍</span>
+        <span>{{ site.location }}</span>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Connect With Us</h4>
+      <p>Reach out via WhatsApp for quick responses</p>
+      <div class="whatsapp-buttons">
+        <a href="https://wa.me/{{ site.social.whatsapp_moses }}" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+          WhatsApp Moses
+        </a>
+        <a href="https://wa.me/{{ site.social.whatsapp_aidan }}" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+          WhatsApp Aidan
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+  </div>
+</footer>

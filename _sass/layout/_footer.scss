@@ -1,0 +1,137 @@
+.site-footer {
+  background: $color-primary-dark;
+  color: $color-white;
+  padding: $spacing-3xl 0 $spacing-xl;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-accent-light;
+    }
+  }
+}
+
+.footer-content {
+  @include container;
+  display: grid;
+  gap: $spacing-2xl;
+  margin-bottom: $spacing-2xl;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer-section {
+  h4 {
+    color: $color-white;
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+  p,
+  li {
+    color: rgba($color-white, 0.9);
+    line-height: $line-height-relaxed;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.footer-contact {
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+
+    svg,
+    .icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: $color-accent;
+      margin-top: 2px;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: $spacing-md;
+  margin-top: $spacing-lg;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba($color-white, 0.1);
+    border-radius: $radius-full;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: $color-accent;
+      transform: translateY(-2px);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.footer-bottom {
+  @include container;
+  padding-top: $spacing-xl;
+  border-top: 1px solid rgba($color-white, 0.1);
+  text-align: center;
+  color: rgba($color-white, 0.7);
+  font-size: $font-size-sm;
+
+  @include md {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: $spacing-lg;
+  margin-top: $spacing-md;
+
+  @include md {
+    margin-top: 0;
+  }
+
+  a {
+    color: rgba($color-white, 0.7);
+    font-size: $font-size-sm;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

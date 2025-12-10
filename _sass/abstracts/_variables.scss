@@ -1,0 +1,115 @@
+// ===========================================
+// COLOR PALETTE
+// ===========================================
+
+// Primary Colors
+$color-primary: #1a365d;        // Dark Blue
+$color-primary-light: #2c5282;
+$color-primary-dark: #0d1b2a;
+
+// Accent Colors
+$color-accent: #e53e3e;         // Vibrant Red
+$color-accent-light: #fc8181;
+$color-accent-dark: #c53030;
+
+// Neutral Colors
+$color-white: #ffffff;
+$color-off-white: #f7fafc;
+$color-gray-100: #edf2f7;
+$color-gray-200: #e2e8f0;
+$color-gray-300: #cbd5e0;
+$color-gray-400: #a0aec0;
+$color-gray-500: #718096;
+$color-gray-600: #4a5568;
+$color-gray-700: #2d3748;
+$color-gray-800: #1a202c;
+$color-black: #000000;
+
+// Semantic Colors
+$color-success: #38a169;
+$color-warning: #d69e2e;
+$color-error: #e53e3e;
+
+// ===========================================
+// TYPOGRAPHY
+// ===========================================
+
+// Font Families
+$font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+// Font Sizes (using clamp for fluid typography)
+$font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+$font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+$font-size-base: clamp(1rem, 0.925rem + 0.375vw, 1.125rem);
+$font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.375rem);
+$font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.625rem);
+$font-size-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+$font-size-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 3rem);
+$font-size-4xl: clamp(2.25rem, 1.75rem + 2.5vw, 4rem);
+$font-size-5xl: clamp(3rem, 2rem + 5vw, 5rem);
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Line Heights
+$line-height-tight: 1.2;
+$line-height-base: 1.6;
+$line-height-relaxed: 1.8;
+
+// ===========================================
+// SPACING
+// ===========================================
+
+$spacing-xs: 0.25rem;   // 4px
+$spacing-sm: 0.5rem;    // 8px
+$spacing-md: 1rem;      // 16px
+$spacing-lg: 1.5rem;    // 24px
+$spacing-xl: 2rem;      // 32px
+$spacing-2xl: 3rem;     // 48px
+$spacing-3xl: 4rem;     // 64px
+$spacing-4xl: 6rem;     // 96px
+$spacing-5xl: 8rem;     // 128px
+
+// ===========================================
+// LAYOUT
+// ===========================================
+
+$container-max-width: 1200px;
+$container-padding: $spacing-md;
+
+// ===========================================
+// EFFECTS
+// ===========================================
+
+// Border Radius
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 1rem;
+$radius-full: 50%;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 300ms ease;
+$transition-slow: 500ms ease;
+
+// ===========================================
+// Z-INDEX
+// ===========================================
+
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal-backdrop: 400;
+$z-modal: 500;
+$z-tooltip: 600;

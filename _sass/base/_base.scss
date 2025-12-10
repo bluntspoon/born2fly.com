@@ -1,0 +1,138 @@
+// Base element styles
+body {
+  background: $color-white;
+}
+
+// Main content
+main {
+  display: block;
+}
+
+// Container
+.container {
+  @include container;
+}
+
+// Section spacing
+.section {
+  padding: $spacing-3xl 0;
+
+  @include md {
+    padding: $spacing-5xl 0;
+  }
+
+  &--light {
+    background: $color-off-white;
+  }
+
+  &--primary {
+    background: $color-primary;
+    color: $color-white;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-white;
+    }
+  }
+
+  &--accent {
+    background: $color-accent;
+    color: $color-white;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-white;
+    }
+  }
+
+  &--cta {
+    background: linear-gradient(135deg, $color-primary 0%, $color-primary-light 100%);
+    color: $color-white;
+    text-align: center;
+
+    h2 {
+      color: $color-white;
+      margin-bottom: $spacing-lg;
+    }
+
+    p {
+      font-size: $font-size-lg;
+      margin-bottom: $spacing-xl;
+      opacity: 0.95;
+    }
+  }
+}
+
+.section-header {
+  margin-bottom: $spacing-3xl;
+
+  h2 {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.section-subtitle {
+  font-size: $font-size-lg;
+  color: $color-gray-600;
+  max-width: 700px;
+
+  .section--primary &,
+  .section--accent & {
+    color: rgba($color-white, 0.9);
+  }
+}
+
+.section-cta {
+  margin-top: $spacing-3xl;
+}
+
+// Text alignment utilities
+.text-center {
+  text-align: center;
+
+  .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Skip link (accessibility)
+.skip-link {
+  @include visually-hidden;
+
+  &:focus {
+    position: fixed;
+    top: $spacing-md;
+    left: $spacing-md;
+    z-index: 9999;
+    padding: $spacing-md $spacing-lg;
+    background: $color-accent;
+    color: $color-white;
+    text-decoration: none;
+    border-radius: $radius-md;
+    clip: auto;
+    width: auto;
+    height: auto;
+  }
+}

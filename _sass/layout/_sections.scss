@@ -1,0 +1,60 @@
+// Page header (for internal pages)
+.page-header {
+  padding: $spacing-3xl 0 $spacing-2xl;
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-light 100%);
+  color: $color-white;
+  text-align: center;
+
+  @include md {
+    padding: $spacing-4xl 0 $spacing-3xl;
+  }
+
+  h1 {
+    color: $color-white;
+    margin-bottom: $spacing-md;
+  }
+
+  .page-subtitle {
+    font-size: $font-size-lg;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// Page content
+.page-content {
+  padding: $spacing-3xl 0;
+
+  @include md {
+    padding: $spacing-5xl 0;
+  }
+
+  // Enhanced typography for content pages
+  h2 {
+    margin-top: $spacing-3xl;
+    margin-bottom: $spacing-lg;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    margin-top: $spacing-2xl;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: $spacing-lg;
+  }
+
+  ul,
+  ol {
+    margin-bottom: $spacing-lg;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
