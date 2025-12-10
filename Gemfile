@@ -1,11 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-
-# GitHub Pages compatibility
+# GitHub Pages gem includes Jekyll and all supported plugins
 gem "github-pages", group: :jekyll_plugins
 
-# Plugins
+# Plugins (these are already included in github-pages, but listed for clarity)
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
