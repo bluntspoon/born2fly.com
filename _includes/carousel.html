@@ -1,0 +1,32 @@
+<div class="carousel-container">
+  <div class="carousel">
+    <div class="carousel-track">
+      {% for image in include.images %}
+      <div class="carousel-slide">
+        <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}" loading="lazy">
+        {% if image.caption %}
+        <div class="carousel-caption">{{ image.caption }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <button class="carousel-btn carousel-btn-next" aria-label="Next slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+
+    <div class="carousel-dots">
+      {% for image in include.images %}
+      <button class="carousel-dot{% if forloop.first %} active{% endif %}" aria-label="Go to slide {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
+  </div>
+</div>

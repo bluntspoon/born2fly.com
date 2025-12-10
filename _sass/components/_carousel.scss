@@ -1,0 +1,134 @@
+.carousel-section {
+  padding: $spacing-3xl 0;
+  background: $color-off-white;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-xl;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+
+    @include md {
+      height: 500px;
+    }
+
+    @include lg {
+      height: 600px;
+    }
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing-xl;
+  background: linear-gradient(to top, rgba($color-primary-dark, 0.9), transparent);
+  color: $color-white;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+}
+
+.carousel-btn {
+  @include button-reset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: rgba($color-white, 0.9);
+  color: $color-primary;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all $transition-base;
+  z-index: 10;
+  box-shadow: $shadow-md;
+
+  &:hover {
+    background: $color-white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: $shadow-lg;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($color-accent, 0.5);
+    outline-offset: 2px;
+  }
+
+  @include max-sm {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.carousel-btn-prev {
+  left: $spacing-md;
+}
+
+.carousel-btn-next {
+  right: $spacing-md;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: $spacing-lg;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: $spacing-sm;
+  z-index: 10;
+}
+
+.carousel-dot {
+  @include button-reset;
+  width: 12px;
+  height: 12px;
+  border-radius: $radius-full;
+  background: rgba($color-white, 0.5);
+  cursor: pointer;
+  transition: all $transition-base;
+
+  &:hover {
+    background: rgba($color-white, 0.8);
+    transform: scale(1.2);
+  }
+
+  &.active {
+    background: $color-white;
+    width: 32px;
+  }
+}

@@ -1,0 +1,15 @@
+- src: /assets/images/carousel/slide1.jpg
+  alt: "Children enjoying gymnastics at Born2Fly"
+  caption: "Building Confidence Through Movement"
+
+- src: /assets/images/carousel/slide2.jpg
+  alt: "Adaptive gymnastics session"
+  caption: "Every Child Can Achieve"
+
+- src: /assets/images/carousel/slide3.jpg
+  alt: "Team working with students"
+  caption: "Expert Coaching for All Abilities"
+
+- src: /assets/images/carousel/slide4.jpg
+  alt: "Fun gymnastics activities"
+  caption: "Where Every Child Can Fly"
