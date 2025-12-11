@@ -39,12 +39,21 @@
     box-shadow: $shadow-xl;
   }
 
-  .icon {
+  .feature-icon {
     width: 64px;
     height: 64px;
     margin-bottom: $spacing-lg;
-    color: $color-accent;
-    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba($color-accent, 0.1), rgba($color-primary, 0.1));
+    border-radius: $radius-lg;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      color: $color-accent;
+    }
   }
 
   h3 {
@@ -77,7 +86,15 @@
     width: 56px;
     height: 56px;
     margin-bottom: $spacing-lg;
-    color: $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      color: $color-accent;
+    }
   }
 
   h3 {
@@ -180,4 +197,18 @@
       margin-bottom: 0;
     }
   }
+}
+
+// Team photo wrapper
+.team-photo-wrapper {
+  max-width: 800px;
+  margin: 0 auto $spacing-3xl;
+  text-align: center;
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
 }

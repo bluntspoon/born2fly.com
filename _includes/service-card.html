@@ -1,6 +1,6 @@
 <article class="service-card">
   <div class="service-icon">
-    <span style="font-size: 48px;">{{ include.service.icon }}</span>
+    {% include icon.html name=include.service.icon %}
   </div>
   <h3>{{ include.service.title }}</h3>
   <p class="service-description">{{ include.service.description }}</p>

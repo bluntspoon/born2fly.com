@@ -10,18 +10,31 @@ description: "Specialist adaptive gymnastics services bringing confidence, hope,
     <div class="carousel-track">
       {% for image in site.data.carousel %}
       <div class="carousel-slide">
-        <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}">
+        <img
+          src="{{ image.src | relative_url }}"
+          alt="{{ image.alt }}"
+          {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+        >
         <div class="carousel-overlay"></div>
       </div>
       {% endfor %}
     </div>
 
     <div class="hero-carousel-content">
-      <h1 class="hero-title">Where Every Child Can Fly</h1>
-      <p class="hero-subtitle">Specialist gymnastics bringing confidence, hope, and endless possibilities to children of all abilities across KwaZulu-Natal</p>
-      <div class="hero-cta">
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Get in Touch</a>
-        <a href="{{ '/services/' | relative_url }}" class="btn btn-outline btn-lg">Our Services</a>
+      <div class="hero-kicker animate-on-load animate-delay-1">
+        <span class="kicker-badge">Trusted by Schools Across KZN</span>
+        <span class="kicker-stat">Gymnastics SA Certified</span>
+      </div>
+      <h1 class="hero-title animate-on-load animate-delay-2">Where Every Child Can Fly</h1>
+      <p class="hero-subtitle animate-on-load animate-delay-3">Specialist gymnastics bringing confidence, hope, and endless possibilities to children of all abilities across KwaZulu-Natal</p>
+      <div class="hero-cta animate-on-load animate-delay-4">
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Get in Touch Today</a>
+        <a href="{{ '/services/' | relative_url }}" class="hero-link">
+          Explore Our Services
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 3l7 7-7 7"/>
+          </svg>
+        </a>
       </div>
     </div>
 
@@ -42,6 +55,27 @@ description: "Specialist adaptive gymnastics services bringing confidence, hope,
       <button class="carousel-dot{% if forloop.first %} active{% endif %}" aria-label="Go to slide {{ forloop.index }}"></button>
       {% endfor %}
     </div>
+
+    <button class="carousel-pause" aria-label="Pause carousel" aria-pressed="false">
+      <svg class="icon-pause" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+        <rect x="5" y="4" width="3" height="12" rx="1"/>
+        <rect x="12" y="4" width="3" height="12" rx="1"/>
+      </svg>
+      <svg class="icon-play" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M6 4l10 6-10 6V4z"/>
+      </svg>
+    </button>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">Scroll to explore</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+
+    <div class="sr-only" aria-live="polite" aria-atomic="true" id="carousel-announcer">
+      Slide 1 of {{ site.data.carousel.size }}
+    </div>
   </div>
 </section>
 
@@ -55,19 +89,25 @@ description: "Specialist adaptive gymnastics services bringing confidence, hope,
 
     <div class="features-grid">
       <div class="feature-card">
-        <div class="icon">💪</div>
+        <div class="feature-icon">
+          {% include icon.html name="confidence" %}
+        </div>
         <h3>Building Confidence</h3>
         <p>Through movement and play, children discover their strengths and capabilities, building self-confidence that extends far beyond the gym.</p>
       </div>
 
       <div class="feature-card">
-        <div class="icon">🤝</div>
+        <div class="feature-icon">
+          {% include icon.html name="inclusive" %}
+        </div>
         <h3>Inclusive by Design</h3>
         <p>Our programs are thoughtfully adapted to ensure every child can participate, learn, and succeed alongside their peers.</p>
       </div>
 
       <div class="feature-card">
-        <div class="icon">🎯</div>
+        <div class="feature-icon">
+          {% include icon.html name="achievement" %}
+        </div>
         <h3>Celebrating Achievement</h3>
         <p>Every milestone matters. We recognize and celebrate each child's progress, no matter how big or small.</p>
       </div>
@@ -104,8 +144,8 @@ description: "Specialist adaptive gymnastics services bringing confidence, hope,
     </div>
 
     <!-- Team Photo -->
-    <div style="max-width: 800px; margin: 0 auto 3rem; text-align: center;">
-      <img src="{{ '/assets/images/team.jpeg' | relative_url }}" alt="Born2Fly Coaching Team" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+    <div class="team-photo-wrapper">
+      <img src="{{ '/assets/images/team.jpeg' | relative_url }}" alt="Born2Fly Coaching Team" class="team-photo">
     </div>
 
     <div class="coaches-grid">

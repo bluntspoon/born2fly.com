@@ -24,9 +24,21 @@
     @include absolute-cover;
     background: linear-gradient(
       180deg,
-      rgba($color-primary-dark, 0.6) 0%,
-      rgba($color-primary, 0.7) 100%
+      rgba($color-primary-dark, 0.35) 0%,
+      rgba($color-primary-dark, 0.55) 40%,
+      rgba($color-primary, 0.5) 100%
     );
+
+    // Add radial gradient for better text readability
+    &::after {
+      content: '';
+      @include absolute-cover;
+      background: radial-gradient(
+        ellipse 80% 60% at 50% 50%,
+        rgba($color-primary-dark, 0.3) 0%,
+        transparent 70%
+      );
+    }
   }
 }
 
@@ -55,6 +67,49 @@
     }
   }
 
+  .hero-kicker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+    justify-content: center;
+    margin-bottom: $spacing-lg;
+
+    .kicker-badge,
+    .kicker-stat {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-sm;
+      padding: $spacing-sm $spacing-lg;
+      background: rgba($color-white, 0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba($color-white, 0.25);
+      border-radius: $radius-full;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: $color-accent;
+        border-radius: $radius-full;
+      }
+    }
+
+    @include max-sm {
+      flex-direction: column;
+      gap: $spacing-sm;
+
+      .kicker-badge,
+      .kicker-stat {
+        font-size: $font-size-xs;
+        padding: $spacing-xs $spacing-md;
+      }
+    }
+  }
+
   .hero-subtitle {
     font-size: $font-size-lg;
     line-height: $line-height-relaxed;
@@ -77,10 +132,37 @@
     @include sm {
       flex-direction: row;
       justify-content: center;
+      gap: $spacing-xl;
     }
 
     .btn {
       min-width: 200px;
+    }
+  }
+
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $color-white;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all $transition-base;
+
+    &:hover {
+      opacity: 1;
+      gap: $spacing-md;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: transform $transition-base;
+    }
+
+    &:hover svg {
+      transform: translateX(4px);
     }
   }
 }
@@ -107,18 +189,22 @@
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .carousel-slide {
   min-width: 100%;
   position: relative;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     display: block;
+    will-change: transform;
+    animation: kenBurns 15s ease-in-out infinite alternate;
 
     @include md {
       height: 500px;
@@ -127,6 +213,24 @@
     @include lg {
       height: 600px;
     }
+  }
+
+  // Stagger Ken Burns animation for each slide
+  &:nth-child(1) img { animation-delay: 0s; }
+  &:nth-child(2) img { animation-delay: 5s; }
+  &:nth-child(3) img { animation-delay: 10s; }
+}
+
+// Ken Burns effect - subtle zoom and pan
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1.05) translate(1%, 0);
   }
 }
 
@@ -186,8 +290,8 @@
   }
 
   @include max-sm {
-    width: 40px;
-    height: 40px;
+    width: 44px; // Minimum touch target for accessibility
+    height: 44px;
 
     svg {
       width: 20px;
@@ -202,6 +306,10 @@
   @include md {
     left: $spacing-xl;
   }
+
+  @include max-sm {
+    left: $spacing-sm; // Better thumb reach on mobile
+  }
 }
 
 .carousel-btn-next {
@@ -209,6 +317,10 @@
 
   @include md {
     right: $spacing-xl;
+  }
+
+  @include max-sm {
+    right: $spacing-sm; // Better thumb reach on mobile
   }
 }
 
@@ -239,5 +351,88 @@
   &.active {
     background: $color-white;
     width: 32px;
+  }
+}
+
+// Pause/Play button
+.carousel-pause {
+  @include button-reset;
+  position: absolute;
+  bottom: $spacing-lg;
+  right: $spacing-lg;
+  width: 40px;
+  height: 40px;
+  background: rgba($color-white, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba($color-white, 0.3);
+  border-radius: $radius-full;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all $transition-base;
+  z-index: 30;
+
+  &:hover {
+    background: rgba($color-white, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($color-accent, 0.5);
+    outline-offset: 2px;
+  }
+
+  .icon-play { display: none; }
+
+  &[aria-pressed="true"] {
+    .icon-pause { display: none; }
+    .icon-play { display: block; }
+  }
+}
+
+// Scroll indicator
+.scroll-indicator {
+  position: absolute;
+  bottom: $spacing-2xl;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-sm;
+  color: $color-white;
+  opacity: 0.7;
+  transition: opacity $transition-base;
+  z-index: 20;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .scroll-text {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  svg {
+    animation: bounceDown 2s infinite;
+  }
+
+  @include max-sm {
+    display: none; // Hide on mobile to save space
+  }
+}
+
+@keyframes bounceDown {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
   }
 }

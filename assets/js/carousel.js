@@ -11,9 +11,12 @@
     const nextBtn = carousel.querySelector('.carousel-btn-next');
     const dotsContainer = carousel.querySelector('.carousel-dots');
     const dots = Array.from(dotsContainer.children);
+    const pauseBtn = carousel.querySelector('.carousel-pause');
+    const announcer = carousel.querySelector('#carousel-announcer');
 
     let currentIndex = 0;
     let autoplayInterval;
+    let isPaused = false;
 
     // Set initial position
     updateCarousel(currentIndex);
@@ -40,6 +43,21 @@
         resetAutoplay();
       });
     });
+
+    // Pause/Play button
+    if (pauseBtn) {
+      pauseBtn.addEventListener('click', function() {
+        isPaused = !isPaused;
+        pauseBtn.setAttribute('aria-pressed', isPaused);
+        pauseBtn.setAttribute('aria-label', isPaused ? 'Play carousel' : 'Pause carousel');
+
+        if (isPaused) {
+          clearInterval(autoplayInterval);
+        } else {
+          startAutoplay();
+        }
+      });
+    }
 
     // Keyboard navigation
     carousel.addEventListener('keydown', function(e) {
@@ -68,7 +86,7 @@
     });
 
     function handleSwipe() {
-      const swipeThreshold = 50;
+      const swipeThreshold = 30; // Reduced for better mobile UX
       const diff = touchStartX - touchEndX;
 
       if (Math.abs(diff) > swipeThreshold) {
@@ -97,10 +115,16 @@
           dot.classList.remove('active');
         }
       });
+
+      // Update ARIA announcer for screen readers
+      if (announcer) {
+        announcer.textContent = `Slide ${index + 1} of ${slides.length}`;
+      }
     }
 
     // Autoplay
     function startAutoplay() {
+      if (isPaused) return; // Don't start if paused
       autoplayInterval = setInterval(function() {
         currentIndex = (currentIndex + 1) % slides.length;
         updateCarousel(currentIndex);
