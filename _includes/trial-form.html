@@ -1,8 +1,8 @@
 <div class="trial-form-section" id="trial-form">
   <div class="container">
     <div class="trial-form-header">
-      <h2>Book Your Free Trial Class</h2>
-      <p class="trial-form-subtitle">No obligation. No commitment. Just pure fun and movement for your child.</p>
+      <h2>Book Your Free School Trial Class</h2>
+      <p class="trial-form-subtitle">Interested in bringing Born2Fly to your school? Or enquiring about individual lessons? Get in touch for a free, no-obligation trial.</p>
     </div>
 
     <!-- Note: Configure formspree_id in _config.yml for form submissions to work -->
@@ -11,17 +11,17 @@
       method="POST"
       class="trial-form"
     >
-      <input type="hidden" name="_subject" value="Free Trial Class Request">
+      <input type="hidden" name="_subject" value="School Trial Class / Individual Lesson Enquiry">
       
       <div class="form-row">
         <div class="form-group">
-          <label for="parent-name">Parent/Guardian Name *</label>
-          <input type="text" id="parent-name" name="parent_name" required autocomplete="name">
+          <label for="contact-name">Contact Name *</label>
+          <input type="text" id="contact-name" name="contact_name" required autocomplete="name" placeholder="School representative or parent/guardian">
         </div>
 
         <div class="form-group">
-          <label for="child-name">Child's Name *</label>
-          <input type="text" id="child-name" name="child_name" required>
+          <label for="school-name">School Name / Organization *</label>
+          <input type="text" id="school-name" name="school_name" required placeholder="Enter school name or 'Individual Enquiry'">
         </div>
       </div>
 
@@ -39,27 +39,25 @@
 
       <div class="form-row">
         <div class="form-group">
-          <label for="child-age">Child's Age *</label>
-          <select id="child-age" name="child_age" required>
-            <option value="">Select age...</option>
-            <option value="3-4">3-4 years</option>
-            <option value="5-6">5-6 years</option>
-            <option value="7-8">7-8 years</option>
-            <option value="9-10">9-10 years</option>
-            <option value="11-12">11-12 years</option>
-            <option value="13+">13+ years</option>
+          <label for="program-type">Program Type *</label>
+          <select id="program-type" name="program_type" required>
+            <option value="">Select program type...</option>
+            <option value="school">School Program</option>
+            <option value="individual">Individual Lessons</option>
+            <option value="group">Group Classes</option>
+            <option value="holiday">Holiday Camps</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="location">School/Location *</label>
+          <label for="location">Location *</label>
           <input type="text" id="location" name="location" required placeholder="e.g., Durban, Pietermaritzburg">
         </div>
       </div>
 
       <div class="form-group">
         <label for="message">Additional Information (Optional)</label>
-        <textarea id="message" name="message" rows="3" placeholder="Tell us about your child's interests or any special requirements..."></textarea>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us about your school, class sizes, student needs, or any special requirements..."></textarea>
       </div>
 
       <div class="form-benefits">
@@ -67,19 +65,19 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 10l3 3 7-7"/>
           </svg>
-          <span>Free trial class - no payment required</span>
+          <span>Free school trial session - no payment required</span>
         </div>
         <div class="benefit-item">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 10l3 3 7-7"/>
           </svg>
-          <span>Qualified, experienced coaches</span>
+          <span>All equipment provided by our team</span>
         </div>
         <div class="benefit-item">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 10l3 3 7-7"/>
           </svg>
-          <span>Adaptive programs for all abilities</span>
+          <span>Qualified coaches & adaptive programs</span>
         </div>
       </div>
 
@@ -87,11 +85,11 @@
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
       <button type="submit" class="btn btn-primary btn-lg btn-block">
-        Claim Your Free Trial
+        Book Your Trial / Enquire Now
       </button>
 
       <p class="form-privacy">
-        We respect your privacy. Your information will only be used to contact you about your free trial class.
+        We respect your privacy. Your information will only be used to contact you about bringing Born2Fly to your school or individual lesson enquiries.
       </p>
     </form>
   </div>
