@@ -28,6 +28,20 @@
     }
   }
   
+  &__logo {
+    margin-bottom: 2rem;
+    
+    img {
+      width: 150px;
+      height: auto;
+      display: block;
+      
+      @media (min-width: 768px) {
+        width: 200px;
+      }
+    }
+  }
+  
   &__title {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(2rem, 5vw, 3.5rem);
