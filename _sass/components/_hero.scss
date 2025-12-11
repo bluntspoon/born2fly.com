@@ -73,11 +73,6 @@
     font-size: $font-size-lg;
     padding: $spacing-lg $spacing-2xl;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-    @include max-sm {
-      width: 100%;
-      max-width: 100%;
-    }
   }
 }
 
