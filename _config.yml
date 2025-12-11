@@ -58,7 +58,7 @@ defaults:
       image: "/assets/images/team.jpeg"
 
 # Form Configuration (update after setting up Formspree)
-formspree_id: ""
+formspree_id: "xeoyprrn"
 
 # SEO Settings
 lang: en

@@ -4,7 +4,7 @@
   z-index: $z-sticky;
   background: $color-white;
   box-shadow: $shadow-md;
-  padding: $spacing-md 0;
+  padding: $spacing-sm 0;
 
   @include md {
     padding: $spacing-lg 0;
