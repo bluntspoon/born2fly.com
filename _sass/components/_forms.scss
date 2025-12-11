@@ -60,6 +60,86 @@
   margin-bottom: $spacing-xl;
 }
 
+// Trial Form Section
+.trial-form-section {
+  padding: $spacing-3xl $spacing-lg;
+  background: $color-off-white;
+
+  @include md {
+    padding: $spacing-5xl $spacing-2xl;
+  }
+}
+
+.trial-form-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto $spacing-3xl;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  .trial-form-subtitle {
+    font-size: $font-size-lg;
+    color: $color-gray-600;
+  }
+}
+
+.trial-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-2xl;
+  background: $color-white;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+
+  @include max-sm {
+    padding: $spacing-lg;
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-lg;
+
+  @include sm {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  padding: $spacing-lg;
+  background: rgba($color-primary, 0.05);
+  border-radius: $radius-md;
+  margin-bottom: $spacing-xl;
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    color: $color-primary;
+    font-weight: $font-weight-semibold;
+
+    svg {
+      flex-shrink: 0;
+      stroke: $color-accent;
+    }
+  }
+}
+
+.form-privacy {
+  text-align: center;
+  font-size: $font-size-sm;
+  color: $color-gray-500;
+  margin-top: $spacing-lg;
+  margin-bottom: 0;
+}
+
 // WhatsApp contact section
 .whatsapp-contact {
   margin: $spacing-3xl 0;

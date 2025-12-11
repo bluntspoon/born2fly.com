@@ -1,3 +1,109 @@
+// Hero Focus Section (Static, Performance-Optimized)
+.hero-focus {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-white;
+  overflow: hidden;
+
+  @include max-sm {
+    min-height: 90vh; // Slightly shorter on mobile for better performance
+  }
+
+  &-image {
+    @include absolute-cover;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
+
+  &-overlay {
+    @include absolute-cover;
+    background: linear-gradient(
+      180deg,
+      rgba($color-primary-dark, 0.65) 0%,
+      rgba($color-primary, 0.75) 100%
+    );
+    z-index: 2;
+  }
+
+  &-content {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    padding: $spacing-xl $spacing-lg;
+
+    @include md {
+      padding: $spacing-3xl $spacing-2xl;
+    }
+  }
+
+  &-title {
+    font-family: $font-heading;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: $font-weight-extrabold;
+    line-height: $line-height-tight;
+    margin-bottom: $spacing-lg;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  &-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-2xl;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-hero {
+    min-width: 280px;
+    font-size: $font-size-lg;
+    padding: $spacing-lg $spacing-2xl;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  justify-content: center;
+  margin-bottom: $spacing-lg;
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: $spacing-sm $spacing-lg;
+    background: rgba($color-white, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba($color-white, 0.25);
+    border-radius: $radius-full;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @include max-sm {
+      font-size: $font-size-xs;
+      padding: $spacing-xs $spacing-md;
+    }
+  }
+}
+
+// Legacy hero styles (kept for other pages if needed)
 .hero {
   position: relative;
   min-height: 100vh;

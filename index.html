@@ -1,197 +1,113 @@
 ---
 layout: home
-title: Born2Fly Gymnastics | Adaptive Gymnastics for Every Child in KwaZulu-Natal
-description: "Specialist adaptive gymnastics services bringing confidence, hope, and possibilities to children of all abilities across KwaZulu-Natal schools."
+title: Born2Fly Gymnastics | Book a Free Trial Class in KZN
+description: "Give your child the gift of confidence and movement. Book a free trial for our specialist adaptive gymnastics programs across KwaZulu-Natal."
 ---
 
-<!-- Hero Carousel Section -->
-<section class="hero-carousel">
-  <div class="carousel">
-    <div class="carousel-track">
-      {% for image in site.data.carousel %}
-      <div class="carousel-slide">
-        <img
-          src="{{ image.src | relative_url }}"
-          alt="{{ image.alt }}"
-          {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
-        >
-        <div class="carousel-overlay"></div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="hero-carousel-content">
-      <div class="hero-kicker animate-on-load animate-delay-1">
-        <span class="kicker-badge">Trusted by Schools Across KZN</span>
-        <span class="kicker-stat">Gymnastics SA Certified</span>
-      </div>
-      <h1 class="hero-title animate-on-load animate-delay-2">Where Every Child Can Fly</h1>
-      <p class="hero-subtitle animate-on-load animate-delay-3">Specialist gymnastics bringing confidence, hope, and endless possibilities to children of all abilities across KwaZulu-Natal</p>
-      <div class="hero-cta animate-on-load animate-delay-4">
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Get in Touch Today</a>
-        <a href="{{ '/services/' | relative_url }}" class="hero-link">
-          Explore Our Services
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 3l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-    </button>
-
-    <button class="carousel-btn carousel-btn-next" aria-label="Next slide">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M9 18l6-6-6-6"/>
-      </svg>
-    </button>
-
-    <div class="carousel-dots">
-      {% for image in site.data.carousel %}
-      <button class="carousel-dot{% if forloop.first %} active{% endif %}" aria-label="Go to slide {{ forloop.index }}"></button>
-      {% endfor %}
-    </div>
-
-    <button class="carousel-pause" aria-label="Pause carousel" aria-pressed="false">
-      <svg class="icon-pause" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-        <rect x="5" y="4" width="3" height="12" rx="1"/>
-        <rect x="12" y="4" width="3" height="12" rx="1"/>
-      </svg>
-      <svg class="icon-play" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-        <path d="M6 4l10 6-10 6V4z"/>
-      </svg>
-    </button>
-
-    <div class="scroll-indicator" aria-hidden="true">
-      <span class="scroll-text">Scroll to explore</span>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
-    </div>
-
-    <div class="sr-only" aria-live="polite" aria-atomic="true" id="carousel-announcer">
-      Slide 1 of {{ site.data.carousel.size }}
-    </div>
+<!-- Hero Section -->
+<section class="hero-simple">
+  <div class="hero-simple__content">
+    <h1 class="hero-simple__title">Give Your Child the Gift of Flight</h1>
+    <p class="hero-simple__subtitle">Book a free, no-obligation trial class today. Experience our specialist adaptive gymnastics programs across KwaZulu-Natal.</p>
+    <a href="#trial-form" class="btn-cta">Claim Your Free Trial</a>
+  </div>
+  <div class="hero-simple__image">
+    <img src="{{ '/assets/images/carousel/hero-bg-1.jpg' | relative_url }}" alt="Children enjoying gymnastics at Born2Fly" loading="eager">
   </div>
 </section>
 
-<!-- Value Proposition Section -->
-<section class="section section--light">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Empowering Every Child to Soar</h2>
-      <p class="section-subtitle">At Born2Fly, we believe every child has the potential to achieve amazing things. Our specialist adaptive gymnastics programs focus on ability, not limitation.</p>
-    </div>
-
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          {% include icon.html name="confidence" %}
+<!-- Trial Form Section -->
+<section class="trial-section" id="trial-form">
+  <div class="trial-section__container">
+    <h2 class="trial-section__title">Book Your Free Trial Class</h2>
+    <p class="trial-section__intro">Complete the form below and we'll get in touch to schedule your child's first class. Specialising in school programs with individual lessons available on request.</p>
+    
+    <form action="https://formspree.io/f/{{ site.formspree_id }}" method="POST" class="trial-form">
+      <input type="hidden" name="_subject" value="Free Trial Class Request - Born2Fly">
+      
+      <div class="trial-form__row">
+        <div class="form-field">
+          <label for="contact_name">Your Name *</label>
+          <input type="text" id="contact_name" name="contact_name" required placeholder="Full name">
         </div>
-        <h3>Building Confidence</h3>
-        <p>Through movement and play, children discover their strengths and capabilities, building self-confidence that extends far beyond the gym.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          {% include icon.html name="inclusive" %}
+        
+        <div class="form-field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
         </div>
-        <h3>Inclusive by Design</h3>
-        <p>Our programs are thoughtfully adapted to ensure every child can participate, learn, and succeed alongside their peers.</p>
       </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          {% include icon.html name="achievement" %}
+      
+      <div class="trial-form__row">
+        <div class="form-field">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+27">
         </div>
-        <h3>Celebrating Achievement</h3>
-        <p>Every milestone matters. We recognize and celebrate each child's progress, no matter how big or small.</p>
+        
+        <div class="form-field">
+          <label for="program_type">Program Interest *</label>
+          <select id="program_type" name="program_type" required>
+            <option value="">Select program type...</option>
+            <option value="school">School Program</option>
+            <option value="individual">Individual Lessons</option>
+            <option value="group">Group Classes</option>
+            <option value="holiday">Holiday Camps</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-field form-field--full">
+        <label for="message">Tell us more (Optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="School name, child's age, special requirements..."></textarea>
+      </div>
+      
+      <!-- Honeypot -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      
+      <button type="submit" class="btn-submit">Submit Trial Request</button>
+      
+      <p class="form-note">We respect your privacy and will only contact you regarding your trial class.</p>
+    </form>
+  </div>
+</section>
+
+<!-- Value Props -->
+<section class="value-props">
+  <div class="value-props__container">
+    <h2 class="value-props__title">Why Choose Born2Fly?</h2>
+    
+    <div class="value-props__grid">
+      <div class="value-card">
+        <div class="value-card__icon">🏫</div>
+        <h3 class="value-card__title">School Programs</h3>
+        <p class="value-card__text">Bringing adaptive gymnastics directly to schools across KZN. All equipment provided, curriculum-aligned sessions.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-card__icon">👨‍🏫</div>
+        <h3 class="value-card__title">Expert Coaches</h3>
+        <p class="value-card__text">Gymnastics SA certified coaches with specialized training in adaptive and inclusive gymnastics.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-card__icon">🌟</div>
+        <h3 class="value-card__title">Every Child Can Fly</h3>
+        <p class="value-card__text">Ability-focused approach ensuring every child can participate, learn, and thrive together.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-card__icon">🎯</div>
+        <h3 class="value-card__title">Individual Options</h3>
+        <p class="value-card__text">Personal coaching sessions available on request for children needing one-on-one support.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Services Preview Section -->
-<section class="section section--primary">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>What We Offer</h2>
-      <p class="section-subtitle">Tailored gymnastics programs designed for schools and children of all abilities across KwaZulu-Natal</p>
-    </div>
-
-    <div class="services-grid">
-      {% for service in site.data.services %}
-        {% include service-card.html service=service %}
-      {% endfor %}
-    </div>
-
-    <div class="section-cta text-center">
-      <a href="{{ '/services/' | relative_url }}" class="btn btn-primary btn-lg">Explore Our Services</a>
-    </div>
-  </div>
-</section>
-
-<!-- Meet the Team Preview -->
-<section class="section">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Meet Our Expert Coaches</h2>
-      <p class="section-subtitle">Dedicated professionals who believe in the potential of every child</p>
-    </div>
-
-    <!-- Team Photo -->
-    <div class="team-photo-wrapper">
-      <img src="{{ '/assets/images/team.jpeg' | relative_url }}" alt="Born2Fly Coaching Team" class="team-photo">
-    </div>
-
-    <div class="coaches-grid">
-      {% for coach in site.data.coaches %}
-        {% include coach-card.html coach=coach %}
-      {% endfor %}
-    </div>
-
-    <div class="section-cta text-center">
-      <a href="{{ '/team/' | relative_url }}" class="btn btn-secondary btn-lg">Meet the Full Team</a>
-    </div>
-  </div>
-</section>
-
-<!-- Why Choose Born2Fly Section -->
-<section class="section section--light">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Why Schools Choose Born2Fly</h2>
-    </div>
-
-    <div class="two-column">
-      <div>
-        <h3>Expertise & Experience</h3>
-        <p>Our qualified coaches bring specialized training in adaptive and inclusive gymnastics, ensuring safe, effective programs for children of all abilities.</p>
-
-        <h3>Convenience & Flexibility</h3>
-        <p>We bring everything to you - all equipment, expert coaches, and tailored programs that work with your school's schedule and space.</p>
-      </div>
-
-      <div>
-        <h3>Proven Results</h3>
-        <p>From improved motor skills and coordination to enhanced confidence and social interaction, our programs deliver measurable benefits for every child.</p>
-
-        <h3>Commitment to Inclusion</h3>
-        <p>Every child deserves the joy of movement. Our ability-focused approach ensures everyone can participate, learn, and thrive together.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section class="section section--cta">
-  <div class="container text-center">
-    <h2>Ready to Help Your Students Fly?</h2>
-    <p>Get in touch to discuss how Born2Fly can bring adaptive gymnastics to your school.</p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Start the Conversation</a>
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="final-cta__container">
+    <h2 class="final-cta__title">Ready to Get Started?</h2>
+    <p class="final-cta__text">Join schools and families across KwaZulu-Natal. Book your free trial today.</p>
+    <a href="#trial-form" class="btn-cta btn-cta--light">Book Your Trial Now</a>
   </div>
 </section>
