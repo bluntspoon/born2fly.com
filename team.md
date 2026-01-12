@@ -8,11 +8,9 @@ description: "Meet the Born2Fly coaching team - qualified, passionate profession
 
 ## Meet the Coaches
 
-Our team brings passion, expertise, and a genuine belief in every child's potential.
-
 <div style="max-width: 900px; margin: 2rem auto; text-align: center;">
   <img src="{{ '/assets/images/team.png' | relative_url }}" alt="Born2Fly Coaching Team" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
-  <p style="margin-top: 1rem; color: #718096; font-style: italic;">Meet Gezzo, Moses & Aidan - Our team brings passion, expertise, and a genuine belief in every child's potential.
+  <p style="margin-top: 1rem; color: #718096; font-style: italic;">Our team brings passion, expertise, and a genuine belief in every child's potential.
 </p>
 </div>
 
