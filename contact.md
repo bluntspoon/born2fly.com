@@ -6,20 +6,13 @@ permalink: /contact/
 description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or email."
 ---
 
-<div class="contact-intro">
-  <h2>Get in Touch</h2>
-  <p class="lead-text">We'd love to hear from you!</p>
-</div>
-
 <div class="contact-whatsapp">
   <h2>💬 WhatsApp (Fastest Response)</h2>
   <p class="whatsapp-description">Get instant answers to your questions</p>
   <div class="whatsapp-button-wrapper">
-    <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-      <span class="whatsapp-icon">💬</span>
+    <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
       <span class="whatsapp-text">
-        <strong>WhatsApp Coach Moses</strong><br>
-        <small>{{ site.phone_moses }}</small>
+        <strong>WhatsApp Coach Moses</strong>
       </span>
     </a>
   </div>
