@@ -35,14 +35,6 @@ We'd love to hear from you!
 
 ---
 
-## 📞 Other Contact Options
-
-- **Email:** [{{ site.email }}](mailto:{{ site.email }})
-- **Phone:** [{{ site.phone_moses }}](tel:{{ site.phone_moses }})
-- **Location:** {{ site.location }}
-
----
-
 ## ❓ FAQ
 
 **What ages do you work with?**
