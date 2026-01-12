@@ -6,53 +6,49 @@ permalink: /contact/
 description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or email."
 ---
 
-## Get in Touch
+<div class="contact-intro">
+  <h2>Get in Touch</h2>
+  <p class="lead-text">We'd love to hear from you!</p>
+</div>
 
-We'd love to hear from you!
-
----
-
-## 💬 WhatsApp (Fastest)
-
-<div class="whatsapp-contact">
-  <div class="whatsapp-buttons">
+<div class="contact-whatsapp">
+  <h2>💬 WhatsApp (Fastest Response)</h2>
+  <p class="whatsapp-description">Get instant answers to your questions</p>
+  <div class="whatsapp-button-wrapper">
     <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-      WhatsApp Coach Moses<br>
-      <small>{{ site.phone_moses }}</small>
-    </a>
-    <a href="https://wa.me/{{ site.social.whatsapp_aidan }}?text=Hi%20Coach%20Aidan%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-      WhatsApp Coach Aidan<br>
-      <small>{{ site.phone_aidan }}</small>
+      <span class="whatsapp-icon">💬</span>
+      <span class="whatsapp-text">
+        <strong>WhatsApp Coach Moses</strong><br>
+        <small>{{ site.phone_moses }}</small>
+      </span>
     </a>
   </div>
 </div>
 
----
+<div class="contact-form-section">
+  <h2>📧 Send a Message</h2>
+  <p class="form-description">Fill out the form below and we'll get back to you soon</p>
+  {% include contact-form.html %}
+</div>
 
-## 📧 Send a Message
-
-{% include contact-form.html %}
-
----
-
-## 📞 Other Contact Options
-
-- **Email:** [{{ site.email }}](mailto:{{ site.email }})
-- **Phone:** [{{ site.phone_moses }}](tel:{{ site.phone_moses }})
-- **Location:** {{ site.location }}
-
----
-
-## ❓ FAQ
-
-**What ages do you work with?**
-All ages, adapted for each developmental stage.
-
-**Do you provide equipment?**
-Yes, we bring everything needed.
-
-**Are coaches qualified?**
-Yes - Gymnastics SA certified, background checked, First Aid trained.
-
-**What areas do you serve?**
-Throughout KwaZulu-Natal.
+<div class="contact-faq">
+  <h2>❓ Frequently Asked Questions</h2>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <h3>What ages do you work with?</h3>
+      <p>All ages, adapted for each developmental stage.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you provide equipment?</h3>
+      <p>Yes, we bring everything needed.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are coaches qualified?</h3>
+      <p>Yes - Gymnastics SA certified, background checked, First Aid trained.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What areas do you serve?</h3>
+      <p>Throughout KwaZulu-Natal.</p>
+    </div>
+  </div>
+</div>

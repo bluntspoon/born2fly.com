@@ -86,15 +86,15 @@
 
   // WhatsApp button
   &-whatsapp {
-    background: #25d366;
+    background: $color-whatsapp;
     color: $color-white;
-    border-color: #25d366;
+    border-color: $color-whatsapp;
 
     &:hover,
     &:focus,
     &:active {
-      background: #20ba59;
-      border-color: #20ba59;
+      background: $color-whatsapp-dark;
+      border-color: $color-whatsapp-dark;
       color: $color-white;
       transform: translateY(-2px);
       box-shadow: $shadow-lg;
