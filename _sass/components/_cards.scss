@@ -217,3 +217,66 @@
   border-radius: $radius-lg;
   box-shadow: $shadow-lg;
 }
+
+// Info card
+.info-card {
+  background: $color-white;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  overflow: hidden;
+  transition: all $transition-base;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-xl;
+    border-color: $color-accent;
+  }
+
+  .info-card-header {
+    background: linear-gradient(135deg, $color-primary, $color-primary-light);
+    padding: $spacing-xl;
+    text-align: center;
+  }
+
+  .info-card-title {
+    color: $color-white;
+    font-size: $font-size-2xl;
+    margin: 0;
+    font-weight: $font-weight-bold;
+  }
+
+  .info-card-content {
+    padding: $spacing-2xl;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: $spacing-md 0;
+        color: $color-gray-700;
+        font-size: $font-size-lg;
+        line-height: $line-height-relaxed;
+      }
+    }
+
+    // For list items starting with emoji
+    p, li {
+      line-height: $line-height-relaxed;
+    }
+  }
+}
+
+// Grid for info cards (2 column layout)
+.info-cards-grid {
+  display: grid;
+  gap: $spacing-2xl;
+  margin: $spacing-3xl 0;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-2xl;
+  }
+}
