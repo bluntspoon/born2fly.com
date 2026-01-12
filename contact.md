@@ -5,9 +5,8 @@ subtitle: Let's Start the Conversation
 permalink: /contact/
 description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or email."
 ---
-
 <div class="contact-whatsapp">
-  <h2>💬 WhatsApp (Fastest Response)</h2>
+  <h2>💬 WhatsApp Born2Fly</h2>
   <p class="whatsapp-description">Get instant answers to your questions</p>
   <div class="whatsapp-button-wrapper">
     <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
@@ -19,7 +18,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
 </div>
 
 <div class="contact-form-section">
-  <h2>📧 Send a Message</h2>
+  <h2>📧 Send us Message</h2>
   <p class="form-description">Fill out the form below and we'll get back to you soon</p>
   {% include contact-form.html %}
 </div>

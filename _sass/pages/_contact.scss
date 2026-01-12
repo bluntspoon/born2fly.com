@@ -23,11 +23,7 @@
 // WhatsApp section
 .contact-whatsapp {
   text-align: center;
-  margin: $spacing-4xl 0;
-  padding: $spacing-3xl $spacing-lg;
-  background: linear-gradient(135deg, rgba($color-whatsapp, 0.08) 0%, rgba($color-whatsapp, 0.03) 100%);
-  border-radius: $radius-lg;
-  border: 2px solid rgba($color-whatsapp, 0.2);
+  padding: $spacing-lg $spacing-lg;
   
   h2 {
     color: $color-primary;
@@ -86,6 +82,7 @@
 // Contact form section
 .contact-form-section {
   margin: $spacing-5xl 0;
+  padding: $spacing-lg $spacing-lg;
   
   h2 {
     text-align: center;
