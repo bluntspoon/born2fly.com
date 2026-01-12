@@ -55,7 +55,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "/assets/images/team.jpeg"
+      image: "/assets/images/team.png"
 
 # Form Configuration (update after setting up Formspree)
 formspree_id: "xeoyprrn"
