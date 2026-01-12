@@ -20,22 +20,34 @@ description: "Meet the Born2Fly coaching team - qualified, passionate profession
   {% endfor %}
 </div>
 
----
+<div class="info-cards-grid">
+  <div class="info-card">
+    <div class="info-card-header">
+      <h3 class="info-card-title">Our Qualifications</h3>
+    </div>
+    <div class="info-card-content">
+      <ul>
+        <li>🎓 Gymnastics SA certified</li>
+        <li>🛡️ Background checked</li>
+        <li>🏥 First Aid trained</li>
+        <li>⭐ Adaptive coaching specialists</li>
+      </ul>
+    </div>
+  </div>
 
-## Our Qualifications
-
-- 🎓 Gymnastics SA certified
-- 🛡️ Background checked
-- 🏥 First Aid trained
-- ⭐ Adaptive coaching specialists
-
----
-
-## Our Philosophy
-
-- **🌟 Every Child Can Achieve** – We focus on what children CAN do
-- **🎯 Individual Progress Matters** – Every achievement counts
-- **😊 Joy in Movement** – Fun is how children learn best
+  <div class="info-card">
+    <div class="info-card-header">
+      <h3 class="info-card-title">Our Philosophy</h3>
+    </div>
+    <div class="info-card-content">
+      <ul>
+        <li><strong>🌟 Every Child Can Achieve</strong> – We focus on what children CAN do</li>
+        <li><strong>🎯 Individual Progress Matters</strong> – Every achievement counts</li>
+        <li><strong>😊 Joy in Movement</strong> – Fun is how children learn best</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <div style="margin: 2rem 0; text-align: center;">
   <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Work With Us</a>
