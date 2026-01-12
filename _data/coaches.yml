@@ -1,6 +1,6 @@
 - name: Coach Moses
   role: Head Coach & Founder
-  image: /assets/images/coach-moses.jpg
+  image: /assets/images/coach-moses.png
   bio: "Passionate about unlocking every child's potential through movement and play. Coach Moses brings years of experience in adaptive gymnastics and believes that every child deserves the joy of discovering what they can achieve."
   specialties:
     - Adaptive Gymnastics
@@ -10,7 +10,7 @@
 
 - name: Coach Aidan
   role: Coach
-  image: /assets/images/coach-aidan.jpg
+  image: /assets/images/coach-aidan.png
   bio: "Dedicated to creating safe, fun environments where children discover what they're capable of achieving. With a focus on building confidence through movement, Coach Aidan helps every child reach their full potential."
   specialties:
     - Inclusive Programs
@@ -20,7 +20,7 @@
 
 - name: Coach Gezzo
   role: Coach
-  image: /assets/images/coach-gezzo.jpg
+  image: /assets/images/coach-gezzo.png
   bio: "Believes every child deserves the joy of gymnastics. Coach Gezzo specializes in making complex movements accessible to all, creating programs where every child can participate and thrive."
   specialties:
     - Creative Movement
