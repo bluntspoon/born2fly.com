@@ -7,7 +7,7 @@
   padding: 2px 0;
 
   @include md {
-    padding: $spacing-lg 0;
+    padding: 0.875rem 0;
   }
 }
 
@@ -34,11 +34,11 @@
     width: auto;
 
     @include md {
-      height: 90px;
+      height: 54px;
     }
     
     @include lg {
-      height: 117px;
+      height: 70px;
     }
   }
 }
