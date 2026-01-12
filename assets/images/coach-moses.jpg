@@ -1,8 +1,0 @@
-<!-- This is a placeholder. Replace with actual photo -->
-<!-- SVG placeholder for Coach Moses -->
-<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <rect width="300" height="300" fill="#2c5282"/>
-  <circle cx="150" cy="120" r="40" fill="#e53e3e"/>
-  <path d="M 150 170 C 120 170, 100 180, 100 220 L 100 300 L 200 300 L 200 220 C 200 180, 180 170, 150 170 Z" fill="#e53e3e"/>
-  <text x="150" y="280" font-family="Arial" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Coach Moses</text>
-</svg>
