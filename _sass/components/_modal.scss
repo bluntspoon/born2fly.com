@@ -1,0 +1,137 @@
+// ===========================================
+// MODAL COMPONENT
+// ===========================================
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: $z-modal;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fadeIn $transition-base;
+
+  &.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-md;
+  }
+
+  // Modal content container
+  &__content {
+    position: relative;
+    background-color: $color-white;
+    border-radius: $radius-lg;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: $shadow-xl;
+    animation: slideUp $transition-base;
+
+    @include md {
+      max-width: 1000px;
+    }
+  }
+
+  // Close button
+  &__close {
+    position: absolute;
+    top: $spacing-md;
+    right: $spacing-md;
+    z-index: $z-tooltip;
+    background: $color-white;
+    border: 2px solid $color-gray-300;
+    border-radius: $radius-full;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all $transition-fast;
+    color: $color-gray-600;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    padding: 0;
+
+    &:hover {
+      background: $color-accent;
+      color: $color-white;
+      border-color: $color-accent;
+      transform: scale(1.1);
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color-accent, 0.5);
+      outline-offset: 2px;
+    }
+  }
+
+  // Modal body with iframe
+  &__body {
+    padding: $spacing-xl $spacing-md;
+    overflow-y: auto;
+    max-height: 90vh;
+
+    @include md {
+      padding: $spacing-2xl $spacing-xl;
+    }
+  }
+
+  // Iframe wrapper
+  &__iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    border-radius: $radius-md;
+    overflow: hidden;
+
+    @include md {
+      height: 75vh;
+      min-height: 600px;
+    }
+  }
+
+  // Iframe
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Prevent body scroll when modal is open
+body.modal-open {
+  overflow: hidden;
+}

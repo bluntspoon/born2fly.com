@@ -12,7 +12,33 @@
 
   {% include footer.html %}
 
+  <!-- Registration Modal -->
+  <div id="registration-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__content">
+      <button id="modal-close" class="modal__close" aria-label="Close modal">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal__body">
+        <h2 id="modal-title" style="text-align: center; margin-bottom: 1.5rem; color: #1a365d; font-family: 'Montserrat', sans-serif;">Registration & Indemnity Form</h2>
+        <div class="modal__iframe-wrapper">
+          <iframe 
+            src="https://forms.gle/jL6wyUGV2GpzvjR38" 
+            class="modal__iframe"
+            title="Born2Fly Registration and Indemnity Form"
+            loading="lazy">
+            Loading…
+          </iframe>
+        </div>
+        <div style="text-align: center; margin-top: 1rem;">
+          <p style="color: #718096; font-size: 0.875rem; margin-bottom: 0.5rem;">Having trouble with the form?</p>
+          <a href="https://forms.gle/jL6wyUGV2GpzvjR38" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="text-decoration: none;">Open Form in New Tab</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/modal.js' | relative_url }}"></script>
 </body>
 </html>
