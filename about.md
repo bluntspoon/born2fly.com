@@ -16,16 +16,16 @@ Our programs focus on what children CAN do, not what they can't. Gymnastics is t
 
 ---
 
-## Our Approach
+## What We Offer
+
+### Our Approach
 
 - **Ability-Focused** – We see potential, not limitations
 - **Inclusive by Design** – Every child can participate and succeed
 - **Fun First** – When children have fun, they learn
 - **School Partnership** – We bring everything to you
 
----
-
-## What We Offer
+### Our Programs
 
 <div class="services-grid" style="margin: 3rem 0;">
   {% for service in site.data.services %}
@@ -35,7 +35,9 @@ Our programs focus on what children CAN do, not what they can't. Gymnastics is t
 
 ---
 
-## Program Focus Areas
+## Program Details
+
+### Focus Areas
 
 Our programme focuses on developing:
 
@@ -46,9 +48,7 @@ Our programme focuses on developing:
 - **Vestibular Balance** – Inner ear balance and spatial awareness
 - **Proprioception** – Body position awareness and control
 
----
-
-## Basic Gymnastic Skills
+### Skills We Teach
 
 Our classes teach essential skills including:
 
@@ -58,6 +58,17 @@ Our classes teach essential skills including:
 - ✅ **Body Co-ordination & Ball Play** – Hand-eye integration
 - ✅ **Strength & Flexibility** – Physical conditioning
 - ✅ **Apparatus Use** – Safe equipment handling
+
+### Why Gymnastics?
+
+Gymnastics develops:
+
+- Balance, coordination & body awareness
+- Confidence through achievement
+- Social skills & teamwork
+- Focus & cognitive development
+
+Our adaptive approach makes these benefits accessible to every child.
 
 ---
 
@@ -80,19 +91,6 @@ Coach Moses has personally trained and taken Charles Phillips to compete at the 
 
 ---
 
-## Why Gymnastics?
-
-Gymnastics develops:
-
-- Balance, coordination & body awareness
-- Confidence through achievement
-- Social skills & teamwork
-- Focus & cognitive development
-
-Our adaptive approach makes these benefits accessible to every child.
-
----
-
 ## Our Commitment
 
 All Born2Fly coaches are qualified professionals with international and specialized certifications, including [Gymnastics SA](https://gymnasticssa.co.za/) certification. Our coaches are background checked, First Aid trained, and specialists in adaptive coaching who are passionate about every child's potential.
@@ -101,9 +99,7 @@ Our qualified, registered, and competent coaches adhere to strict safety standar
 
 Born2Fly is proud to be associated with [Pinetown Gymnastics](https://www.ptngym.co.za/), bringing excellence in gymnastics education to schools across KwaZulu-Natal.
 
----
-
-## What's Included
+### What's Included
 
 - ✅ All gymnastics equipment
 - ✅ Comprehensive insurance
@@ -112,17 +108,13 @@ Born2Fly is proud to be associated with [Pinetown Gymnastics](https://www.ptngym
 
 ---
 
-## Registration & Policies
+## Get Started
 
 **Free Trial Session Available** – Experience our program before committing!
 
 To secure a spot for your child, please complete our registration form. A registration fee will be expected upon registration, at which point banking details will be provided.
 
 **Cancellation Policy**: Please give one month's written notice if you wish to cancel your child's membership.
-
----
-
-## Ready to Start?
 
 <div style="margin: 2rem 0; text-align: center;">
   <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Contact Us Today</a>
