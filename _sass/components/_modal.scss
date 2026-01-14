@@ -84,6 +84,14 @@
     }
   }
 
+  // Modal title
+  &__title {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    color: $color-primary;
+    font-family: $font-heading;
+  }
+
   // Iframe wrapper
   &__iframe-wrapper {
     position: relative;
@@ -107,6 +115,18 @@
     width: 100%;
     height: 100%;
     border: none;
+  }
+
+  // Fallback section
+  &__fallback {
+    text-align: center;
+    margin-top: $spacing-md;
+  }
+
+  &__fallback-text {
+    color: $color-gray-500;
+    font-size: $font-size-sm;
+    margin-bottom: $spacing-sm;
   }
 }
 
