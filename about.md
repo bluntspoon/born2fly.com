@@ -40,7 +40,7 @@ Basic gymnastic skills include:
 
 ---
 
-## Therapeutic Benefits
+## Special Needs & Therapeutic Support
 
 Born2Fly proudly caters for children with special needs and has many years of experience working with children of all abilities. These activities are ideal for children requiring Occupational Therapy (OT).
 

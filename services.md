@@ -44,7 +44,7 @@ Our classes teach essential skills including:
 
 ---
 
-## Therapeutic Benefits
+## Special Needs & Therapeutic Support
 
 Born2Fly proudly caters for children with special needs and has many years of experience working with children of all abilities. Our activities are ideal for children requiring Occupational Therapy (OT).
 
