@@ -76,11 +76,13 @@
   // Modal body with iframe
   &__body {
     padding: $spacing-xl $spacing-md;
+    padding-top: calc($spacing-xl + 20px); // Extra space for close button on mobile
     overflow-y: auto;
     max-height: 90vh;
 
     @include md {
       padding: $spacing-2xl $spacing-xl;
+      padding-top: $spacing-2xl; // Normal padding on desktop
     }
   }
 
@@ -90,6 +92,11 @@
     margin-bottom: $spacing-lg;
     color: $color-primary;
     font-family: $font-heading;
+    padding-right: 50px; // Space for close button
+    
+    @include md {
+      padding-right: 0; // No extra padding needed on desktop
+    }
   }
 
   // Iframe wrapper
