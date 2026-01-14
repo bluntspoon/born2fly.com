@@ -28,7 +28,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
   <div class="faq-grid">
     <div class="faq-item">
       <h3>What ages do you work with?</h3>
-      <p>Our Pre-School & Adaptive Gymnastics programme is designed for children aged 3 to 6 years, adapted for each child's developmental stage and abilities.</p>
+      <p>Our Pre-School & Adaptive Gymnastics programme is designed for children aged 3 and up, adapted for each child's developmental stage and abilities.</p>
     </div>
     <div class="faq-item">
       <h3>Do you provide equipment?</h3>
