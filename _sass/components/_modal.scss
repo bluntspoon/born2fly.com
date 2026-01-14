@@ -4,8 +4,9 @@
 
 // Modal-specific variables
 $modal-close-button-size: 40px;
-$modal-close-button-padding: 10px;
-$modal-title-spacing: $modal-close-button-size + $modal-close-button-padding;
+$modal-close-button-spacing: $spacing-md; // Spacing between button and title
+$modal-mobile-extra-padding: $spacing-lg; // Extra top padding on mobile for button clearance
+$modal-title-spacing: $modal-close-button-size + $modal-close-button-spacing;
 
 .modal {
   display: none;
@@ -81,7 +82,7 @@ $modal-title-spacing: $modal-close-button-size + $modal-close-button-padding;
   // Modal body with iframe
   &__body {
     padding: $spacing-xl $spacing-md;
-    padding-top: calc($spacing-xl + 20px); // Extra space for close button on mobile
+    padding-top: calc($spacing-xl + $modal-mobile-extra-padding); // Extra space for close button on mobile
     overflow-y: auto;
     max-height: 90vh;
 
