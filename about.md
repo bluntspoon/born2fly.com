@@ -62,12 +62,14 @@ Our adaptive approach makes these benefits accessible to every child.
 ## Our Commitment
 
 All Born2Fly coaches are:
-- Qualified professionals with international and specialized certifications
+- Qualified professionals with international and specialized certifications, including [Gymnastics SA](https://gymnasticssa.co.za/) certification
 - Background checked & First Aid trained
 - Specialists in adaptive coaching
 - Passionate about every child's potential
 
 Our qualified, registered, and competent coaches adhere to strict safety standards, ensuring a secure and positive environment for your child's development.
+
+Born2Fly is proud to be associated with [Pinetown Gymnastics](https://www.ptngym.co.za/), bringing excellence in gymnastics education to schools across KwaZulu-Natal.
 
 ---
 

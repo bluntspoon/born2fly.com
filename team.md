@@ -26,11 +26,13 @@ description: "Meet the Born2Fly coaching team - qualified, passionate profession
     <div class="info-card-content">
       <ul>
         <li>🎓 International & professional certifications</li>
+        <li>🏆 <a href="https://gymnasticssa.co.za/" target="_blank" rel="noopener">Gymnastics SA</a> certified</li>
         <li>🛡️ Background checked</li>
         <li>🏥 First Aid trained</li>
         <li>⭐ Adaptive coaching specialists</li>
         <li>🌍 International expertise</li>
       </ul>
+      <p style="margin-top: 1rem; font-size: 0.9em;">Proudly associated with <a href="https://www.ptngym.co.za/" target="_blank" rel="noopener">Pinetown Gymnastics</a></p>
     </div>
   </div>
 
