@@ -46,7 +46,9 @@ Our classes teach essential skills including:
 
 ## Therapeutic Benefits
 
-Our activities are ideal for children requiring Occupational Therapy (OT). Children are encouraged to participate in activities with fun presentation and the camaraderie of their fellow pupils. All activities are presented in a fun and safe manner, supporting both physical and emotional development.
+Born2Fly proudly caters for children with special needs and has many years of experience working with children of all abilities. Our activities are ideal for children requiring Occupational Therapy (OT). Children are encouraged to participate in activities with fun presentation and the camaraderie of their fellow pupils. All activities are presented in a fun and safe manner, supporting both physical and emotional development.
+
+Coach Moses has personally trained and taken Charles Phillips, who achieved 2 medals at the Trisome Games (down syndrome multi-code games) in Turkey - Gold for his parallel bar final routine and bronze for his horizontal bar routine in the T21 senior men's division. This achievement showcases our commitment to empowering children with special needs to reach their full potential.
 
 ---
 
