@@ -1,10 +1,8 @@
 main:
   - title: Home
     url: /
-  - title: About Us
+  - title: About & Services
     url: /about/
-  - title: Services
-    url: /services/
   - title: Our Team
     url: /team/
   - title: Contact
