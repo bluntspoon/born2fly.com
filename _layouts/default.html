@@ -12,7 +12,33 @@
 
   {% include footer.html %}
 
+  <!-- Registration Modal -->
+  <div id="registration-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__content">
+      <button id="modal-close" class="modal__close" aria-label="Close modal">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal__body">
+        <h2 id="modal-title" class="modal__title">Registration & Indemnity Form</h2>
+        <div class="modal__iframe-wrapper">
+          <iframe 
+            src="{{ site.registration_form_url }}" 
+            class="modal__iframe"
+            title="Born2Fly Registration and Indemnity Form"
+            loading="lazy">
+            Loading…
+          </iframe>
+        </div>
+        <div class="modal__fallback">
+          <p class="modal__fallback-text">Having trouble with the form?</p>
+          <a href="{{ site.registration_form_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open Form in New Tab</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/modal.js' | relative_url }}"></script>
 </body>
 </html>
