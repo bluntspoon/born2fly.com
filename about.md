@@ -117,5 +117,6 @@ To secure a spot for your child, please complete our registration form. A regist
 **Cancellation Policy**: Please give one month's written notice if you wish to cancel your child's membership.
 
 <div style="margin: 2rem 0; text-align: center;">
-  <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Contact Us Today</a>
+  <a href="#" class="btn btn-primary btn-lg" data-modal-trigger>Register</a>
+  <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Contact Us</a>
 </div>
