@@ -21,7 +21,8 @@
 - name: Coach Aidan
   role: Junior Coach
   image: /assets/images/coach-aidan.png
-  bio: "Certified in inclusive and early childhood gymnastics, he is dedicated to ensuring a safe, supportive space where every child can discover their potential."
+  bio: "Dedicated to creating safe, fun environments where children discover what they're capable of achieving. With a focus on building confidence through movement, Coach Aidan helps every child reach their full potential."
+  website: https://aidanbevan.com/
   specialties:
     - Inclusive Gymnastics
     - Early Childhood Gymnastics
