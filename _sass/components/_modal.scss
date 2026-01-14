@@ -2,6 +2,11 @@
 // MODAL COMPONENT
 // ===========================================
 
+// Modal-specific variables
+$modal-close-button-size: 40px;
+$modal-close-button-padding: 10px;
+$modal-title-spacing: $modal-close-button-size + $modal-close-button-padding;
+
 .modal {
   display: none;
   position: fixed;
@@ -92,7 +97,7 @@
     margin-bottom: $spacing-lg;
     color: $color-primary;
     font-family: $font-heading;
-    padding-right: 50px; // Space for close button
+    padding-right: $modal-title-spacing; // Space for close button
     
     @include md {
       padding-right: 0; // No extra padding needed on desktop
