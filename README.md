@@ -81,6 +81,20 @@ To enable the contact form:
    formspree_id: "YOUR_FORM_ID"
    ```
 
+### Google Analytics / Google Tag Setup
+
+To enable Google Analytics or Google Tag Manager:
+
+1. Create a Google Analytics 4 property or Google Tag Manager account
+2. Copy your Google Tag ID (e.g., `G-XXXXXXXXXX` for GA4 or `GT-XXXXXXXXX` for Google Tag)
+3. Add it to `_config.yml`:
+   ```yaml
+   google_tag_id: "G-XXXXXXXXXX"
+   ```
+4. The tag will be automatically included in the `<head>` section of all pages
+
+**Note**: The Google tag will only load when a valid ID is configured. Leave the field empty to disable tracking.
+
 ### Custom Domain
 
 To use a custom domain:
