@@ -23,13 +23,9 @@ Our programs focus on what children CAN do, not what they can't. Gymnastics is t
 - **Fun First** – When children have fun, they learn
 - **School Partnership** – We bring everything to you
 
-We focus on gross and fine motor skills, laterality, hand-eye/foot-eye coordination, cardiovascular health, vestibular balance, and proprioception.
-
 ---
 
 ## What We Offer
-
-We bring specialist Pre-School & Adaptive Gymnastics directly to schools across KwaZulu-Natal. Our programme is designed for children aged 3 and up and is specifically adapted for children with special needs.
 
 <div class="services-grid" style="margin: 3rem 0;">
   {% for service in site.data.services %}
@@ -99,11 +95,7 @@ Our adaptive approach makes these benefits accessible to every child.
 
 ## Our Commitment
 
-All Born2Fly coaches are:
-- Qualified professionals with international and specialized certifications, including [Gymnastics SA](https://gymnasticssa.co.za/) certification
-- Background checked & First Aid trained
-- Specialists in adaptive coaching
-- Passionate about every child's potential
+All Born2Fly coaches are qualified professionals with international and specialized certifications, including [Gymnastics SA](https://gymnasticssa.co.za/) certification. Our coaches are background checked, First Aid trained, and specialists in adaptive coaching who are passionate about every child's potential.
 
 Our qualified, registered, and competent coaches adhere to strict safety standards, ensuring a secure and positive environment for your child's development.
 
@@ -113,12 +105,10 @@ Born2Fly is proud to be associated with [Pinetown Gymnastics](https://www.ptngym
 
 ## What's Included
 
-- ✅ Qualified, background-checked coaches with international certifications
 - ✅ All gymnastics equipment
 - ✅ Comprehensive insurance
 - ✅ Progress tracking & reports
 - ✅ Adaptations for individual needs
-- ✅ Free trial session available
 
 ---
 
