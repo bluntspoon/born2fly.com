@@ -1,13 +1,13 @@
 # Site Settings
 title: Born2Fly Gymnastics
 description: "Empowering every child through gymnastics. Specialist adaptive gymnastics services bringing confidence, hope, and possibilities to schools across KwaZulu-Natal."
-tagline: "Where Every Child Can Fly"
+tagline: "where every child can fly"
 url: "https://born2fly.co.za"
 baseurl: ""
 author: "Born2Fly Gymnastics"
 
 # Contact Information
-email: info@born2fly.com
+email: info@born2fly.co.za
 phone_moses: "+27 76 547 1668"
 phone_aidan: "+27 64 653 0036"
 location: "KwaZulu-Natal, South Africa"

@@ -1,21 +1,21 @@
 - name: Coach Moses
   role: Head Coach & Founder
   image: /assets/images/coach-moses.png
-  bio: "Passionate about unlocking every child's potential through movement and play. Coach Moses brings years of experience in adaptive gymnastics and believes that every child deserves the joy of discovering what they can achieve."
+  bio: "Holds an International Gymnastics Federation (FIG) Level 3 qualification (Master Coach). With extensive experience in school and competitive coaching, he specializes in working with children with special needs, ensuring every child is given the opportunity to reach their full potential."
   specialties:
-    - Adaptive Gymnastics
-    - Sensory Integration
-    - Movement Therapy
-    - School Programs
+    - FIG Level 3 (Master Coach)
+    - International Expertise
+    - Special Needs Specialist
+    - School & Competitive Coaching
 
 - name: Coach Gezzo
   role: Senior Coach
   image: /assets/images/coach-gezzo.png
-  bio: "Believes every child deserves the joy of gymnastics. Coach Gezzo specializes in making complex movements accessible to all, creating programs where every child can participate and thrive."
+  bio: "Specializes in creative movement and adaptive techniques. He focuses on individual support and motor skills development, believing every child deserves the joy of gymnastics."
   specialties:
     - Creative Movement
-    - Motor Skills Development
     - Adaptive Techniques
+    - Motor Skills Development
     - Individual Support
 
 - name: Coach Aidan
@@ -24,7 +24,7 @@
   bio: "Dedicated to creating safe, fun environments where children discover what they're capable of achieving. With a focus on building confidence through movement, Coach Aidan helps every child reach their full potential."
   website: https://aidanbevan.com/
   specialties:
-    - Inclusive Programs
-    - Balance & Coordination
+    - Inclusive Gymnastics
+    - Early Childhood Gymnastics
     - Confidence Building
-    - Group Dynamics
+    - Safe Learning Environment
