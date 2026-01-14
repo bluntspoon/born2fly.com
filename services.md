@@ -8,7 +8,7 @@ description: "Born2Fly's adaptive gymnastics services - school programs, group s
 
 ## What We Offer
 
-We bring specialist Pre-School & Adaptive Gymnastics directly to schools across KwaZulu-Natal. Our programme is designed for children aged 3 to 6 years and is specifically adapted for children with special needs.
+We bring specialist Pre-School & Adaptive Gymnastics directly to schools across KwaZulu-Natal. Our programme is designed for children aged 3 and up and is specifically adapted for children with special needs.
 
 <div class="services-grid" style="margin: 3rem 0;">
   {% for service in site.data.services %}

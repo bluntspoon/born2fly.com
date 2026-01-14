@@ -10,7 +10,7 @@ description: "Learn about Born2Fly Gymnastics, our mission to empower every chil
 
 Born2Fly was founded with a simple belief: **every child deserves the joy of movement** and the confidence that comes from discovering what they can do.
 
-We bring Pre-School & Adaptive Gymnastics directly to schools across KwaZulu-Natal, working with children of all abilities. Our programs are designed for children aged 3 to 6 years and introduce students to gymnastics and physical fitness in an inclusive environment. The programme is specifically adapted for children with special needs.
+We bring Pre-School & Adaptive Gymnastics directly to schools across KwaZulu-Natal, working with children of all abilities. Our programs are designed for children aged 3 and up and introduce students to gymnastics and physical fitness in an inclusive environment. The programme is specifically adapted for children with special needs.
 
 Our programs focus on what children CAN do, not what they can't. Gymnastics is the basis of sports and provides a wonderful foundation for all activities, helping to develop strength, flexibility, coordination, and physical fitness.
 
