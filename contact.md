@@ -28,7 +28,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
   <div class="faq-grid">
     <div class="faq-item">
       <h3>What ages do you work with?</h3>
-      <p>All ages, adapted for each developmental stage.</p>
+      <p>Our Pre-School & Adaptive Gymnastics programme is designed for children aged 3 to 6 years, adapted for each child's developmental stage and abilities.</p>
     </div>
     <div class="faq-item">
       <h3>Do you provide equipment?</h3>
@@ -36,11 +36,19 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
     </div>
     <div class="faq-item">
       <h3>Are coaches qualified?</h3>
-      <p>Yes - Gymnastics SA certified, background checked, First Aid trained.</p>
+      <p>Yes - our coaches hold international and professional certifications, are background checked, and First Aid trained.</p>
     </div>
     <div class="faq-item">
       <h3>What areas do you serve?</h3>
       <p>Throughout KwaZulu-Natal.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a free trial?</h3>
+      <p>Yes! Free trial sessions are available so you can experience our program before committing.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What's the cancellation policy?</h3>
+      <p>Please give one month's written notice if you wish to cancel your child's membership.</p>
     </div>
   </div>
 </div>
