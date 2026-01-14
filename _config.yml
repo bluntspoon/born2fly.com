@@ -62,7 +62,7 @@ formspree_id: "xeoyprrn"
 
 # Google Analytics / Google Tag
 # Add your Google Tag ID here (e.g., G-XXXXXXXXXX or GT-XXXXXXXXX)
-google_tag_id: ""
+google_tag_id: "G-8SP1Z0S97H"
 
 # SEO Settings
 lang: en
