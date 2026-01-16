@@ -1,44 +1,56 @@
-- title: School Programs
+- title: Pre-School Gymnastics
   icon: "🏫"
-  description: "Bringing adaptive gymnastics directly to schools across KwaZulu-Natal."
+  description: "Bringing adaptive gymnastics directly to schools across KwaZulu-Natal for children aged 3 and up."
+  details: "Our pre-school programme introduces young learners to gymnastics fundamentals through fun, age-appropriate activities. We focus on developing gross and fine motor skills, balance, coordination, and body awareness. All equipment is provided and sessions are designed to integrate with school schedules."
   features:
-    - All equipment provided
-    - Flexible scheduling
-    - Qualified coaches
-    - Curriculum-aligned sessions
+    - All equipment provided and set up by our coaches
+    - Flexible scheduling to fit school timetables
+    - Qualified, background-checked coaches
+    - Develops fundamental movement patterns
+    - Builds confidence and social skills
 
-- title: Special Needs Programs
+- title: Adaptive Gymnastics
   icon: "🤸"
-  description: "Expert adaptive gymnastics programs designed specifically for children with special needs, with many years of experience and proven success."
+  description: "Expert adaptive gymnastics programmes for children with special needs, with many years of experience and proven success."
+  details: "Born2Fly proudly caters for children with special needs and has many years of experience working with children of all abilities. Our adaptive approach is ideal for children requiring Occupational Therapy (OT). Our coaches are trained to work with diverse needs and abilities, providing personalized support in a safe, encouraging environment."
+  special_needs: true
   features:
-    - Personalized adaptive coaching
+    - Personalized adaptive coaching for individual needs
     - Inclusive, supportive environment
-    - Proven track record of achievements
     - Occupational therapy benefits
+    - Expert coaching with years of experience
+    - Activities presented in fun, safe manner
+    - Support for physical and emotional development
 
 - title: Group Sessions
   icon: "👥"
-  description: "Fun group classes for children of all abilities, building confidence together."
+  description: "Fun group classes for children of all abilities, building confidence and teamwork."
+  details: "Small group sessions where children learn together, developing social skills alongside physical abilities. Our inclusive approach ensures every child can participate at their own level while enjoying the camaraderie of their peers."
   features:
-    - Small group sizes
+    - Small group sizes for individual attention
     - Adapted for all abilities
-    - Social skill development
-    - Team building activities
+    - Social skill development through team activities
+    - Encouraging peer interaction
+    - Focus on what children CAN do
 
 - title: Individual Coaching
   icon: "🌟"
-  description: "One-on-one sessions focused on your child's unique goals."
+  description: "One-on-one personalized sessions focused on your child's unique goals and abilities."
+  details: "Tailored programmes designed around your child's specific needs, abilities, and goals. Perfect for children who benefit from focused attention or are working towards specific developmental milestones."
   features:
-    - Tailored programs
-    - Detailed progress tracking
-    - Flexible scheduling
-    - Personalized attention
+    - Completely personalized programmes
+    - Detailed progress tracking and reporting
+    - Flexible scheduling options
+    - Intensive skill development
+    - Builds on individual strengths
 
 - title: Holiday Camps
   icon: "🎯"
-  description: "Action-packed holiday programs keeping children active and engaged."
+  description: "Action-packed holiday programmes keeping children active, engaged, and learning during school breaks."
+  details: "Our holiday camps provide structured fun during school breaks, introducing new challenges while reinforcing skills learned during term time. Children stay active and engaged while making new friends."
   features:
-    - Full or half-day options
-    - Multiple activities
-    - Safe, supervised fun
-    - New skills and challenges
+    - Full or half-day options available
+    - Multiple activities and challenges
+    - Safe, supervised environment
+    - New skills and experiences
+    - Fun group dynamics

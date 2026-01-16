@@ -114,6 +114,13 @@
     line-height: $line-height-relaxed;
   }
 
+  .service-details {
+    color: $color-gray-600;
+    margin-bottom: $spacing-lg;
+    line-height: $line-height-relaxed;
+    font-size: $font-size-sm;
+  }
+
   .service-features {
     list-style: none;
     padding: 0;
