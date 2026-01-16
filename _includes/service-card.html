@@ -4,6 +4,9 @@
   </div>
   <h3>{{ include.service.title }}</h3>
   <p class="service-description">{{ include.service.description }}</p>
+  {% if include.service.details %}
+  <p class="service-details">{{ include.service.details }}</p>
+  {% endif %}
   {% if include.service.features %}
   <ul class="service-features">
     {% for feature in include.service.features %}
