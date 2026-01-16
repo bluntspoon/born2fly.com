@@ -9,7 +9,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
   <h2>💬 WhatsApp Born2Fly</h2>
   <p class="whatsapp-description">Get instant answers to your questions</p>
   <div class="whatsapp-button-wrapper">
-    <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programs." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+    <a href="https://wa.me/{{ site.social.whatsapp_moses }}?text=Hi%20Coach%20Moses%2C%20I'm%20interested%20in%20Born2Fly%20gymnastics%20programmes." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
       <span class="whatsapp-text">
         <strong>WhatsApp Coach Moses</strong>
       </span>
@@ -28,7 +28,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
   <div class="faq-grid">
     <div class="faq-item">
       <h3>What ages do you work with?</h3>
-      <p>Our Pre-School & Adaptive Gymnastics program is designed for children aged 3 and up, adapted for each child's developmental stage and abilities.</p>
+      <p>Our Pre-School & Adaptive Gymnastics programme is designed for children aged 3 and up, adapted for each child's developmental stage and abilities.</p>
     </div>
     <div class="faq-item">
       <h3>Do you provide equipment?</h3>
@@ -44,7 +44,7 @@ description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or emai
     </div>
     <div class="faq-item">
       <h3>Is there a free trial?</h3>
-      <p>Yes! Free trial sessions are available so you can experience our program before committing.</p>
+      <p>Yes! Free trial sessions are available so you can experience our programme before committing.</p>
     </div>
     <div class="faq-item">
       <h3>What's the cancellation policy?</h3>

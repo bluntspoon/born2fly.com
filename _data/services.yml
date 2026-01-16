@@ -1,7 +1,7 @@
 - title: Pre-School Gymnastics
   icon: "🏫"
   description: "Bringing adaptive gymnastics directly to schools across KwaZulu-Natal for children aged 3 and up."
-  details: "Our pre-school program introduces young learners to gymnastics fundamentals through fun, age-appropriate activities. We focus on developing gross and fine motor skills, balance, coordination, and body awareness. All equipment is provided and sessions are designed to integrate with school schedules."
+  details: "Our pre-school programme introduces young learners to gymnastics fundamentals through fun, age-appropriate activities. We focus on developing gross and fine motor skills, balance, coordination, and body awareness. All equipment is provided and sessions are designed to integrate with school schedules."
   features:
     - All equipment provided and set up by our coaches
     - Flexible scheduling to fit school timetables
@@ -11,7 +11,7 @@
 
 - title: Adaptive Gymnastics
   icon: "🤸"
-  description: "Expert adaptive gymnastics programs for children with special needs, with many years of experience and proven success."
+  description: "Expert adaptive gymnastics programmes for children with special needs, with many years of experience and proven success."
   details: "Born2Fly proudly caters for children with special needs and has many years of experience working with children of all abilities. Our adaptive approach is ideal for children requiring Occupational Therapy (OT). Our coaches are trained to work with diverse needs and abilities, providing personalized support in a safe, encouraging environment."
   special_needs: true
   features:
@@ -36,9 +36,9 @@
 - title: Individual Coaching
   icon: "🌟"
   description: "One-on-one personalized sessions focused on your child's unique goals and abilities."
-  details: "Tailored programs designed around your child's specific needs, abilities, and goals. Perfect for children who benefit from focused attention or are working towards specific developmental milestones."
+  details: "Tailored programmes designed around your child's specific needs, abilities, and goals. Perfect for children who benefit from focused attention or are working towards specific developmental milestones."
   features:
-    - Completely personalized programs
+    - Completely personalized programmes
     - Detailed progress tracking and reporting
     - Flexible scheduling options
     - Intensive skill development
@@ -46,7 +46,7 @@
 
 - title: Holiday Camps
   icon: "🎯"
-  description: "Action-packed holiday programs keeping children active, engaged, and learning during school breaks."
+  description: "Action-packed holiday programmes keeping children active, engaged, and learning during school breaks."
   details: "Our holiday camps provide structured fun during school breaks, introducing new challenges while reinforcing skills learned during term time. Children stay active and engaged while making new friends."
   features:
     - Full or half-day options available

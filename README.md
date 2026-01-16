@@ -4,7 +4,7 @@ Official website for Born2Fly Gymnastics - specialist adaptive gymnastics servic
 
 ## About
 
-Born2Fly brings adaptive gymnastics directly to schools, empowering children of all abilities through movement, play, and expert coaching. Our programs focus on what children CAN do, building confidence, coordination, and joy.
+Born2Fly brings adaptive gymnastics directly to schools, empowering children of all abilities through movement, play, and expert coaching. Our programmes focus on what children CAN do, building confidence, coordination, and joy.
 
 ## Technology Stack
 
