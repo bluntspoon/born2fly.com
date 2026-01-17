@@ -59,14 +59,14 @@
     height: 220px;
     background: #ffffff;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     padding: 1.25rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     
     @media (min-width: 768px) {
       width: 280px;
       height: 280px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       padding: 1.5rem;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     }
@@ -87,6 +87,20 @@
       height: 100%;
       object-fit: contain;
       display: block;
+    }
+  }
+  
+  &__logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.02em;
+    
+    @media (min-width: 768px) {
+      margin-bottom: 1.25rem;
     }
   }
   
