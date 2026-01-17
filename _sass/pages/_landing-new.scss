@@ -1,11 +1,11 @@
 // Landing Page - Clean Redesign
 // Simple, modern, conversion-focused
-// Mobile-first, only red #e53e3e and blue #1a365d
+// Mobile-first, only red #e53e3e and black #000000
 
 .hero-simple {
   display: grid;
   min-height: 100vh;
-  background: #1a365d;
+  background: #000000;
   position: relative;
   overflow: hidden;
   
@@ -220,7 +220,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.875rem, 4vw, 2.5rem);
     font-weight: 800;
-    color: #1a365d;
+    color: #000000;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -272,7 +272,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: #1a365d;
+    color: #000000;
     margin-bottom: 0.5rem;
   }
   
@@ -356,7 +356,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.875rem, 4vw, 2.5rem);
     font-weight: 800;
-    color: #1a365d;
+    color: #000000;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -395,7 +395,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1a365d;
+    color: #000000;
     margin-bottom: 0.75rem;
   }
   
@@ -409,7 +409,7 @@
 
 .final-cta {
   padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #1a365d 0%, #0d1b2a 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   
   @media (min-width: 768px) {
     padding: 5rem 2rem;
