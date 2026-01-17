@@ -10,11 +10,18 @@
     if (fallbackIcon) {
       // Extract the current href and replace light with dark or vice versa
       const currentHref = fallbackIcon.href;
-      const newHref = isDark 
-        ? currentHref.replace('favicon-light.svg', 'favicon-dark.svg')
-        : currentHref.replace('favicon-dark.svg', 'favicon-light.svg');
+      let newHref;
       
-      fallbackIcon.href = newHref;
+      if (isDark && currentHref.includes('favicon-light.svg')) {
+        newHref = currentHref.replace('favicon-light.svg', 'favicon-dark.svg');
+      } else if (!isDark && currentHref.includes('favicon-dark.svg')) {
+        newHref = currentHref.replace('favicon-dark.svg', 'favicon-light.svg');
+      }
+      
+      // Only update if we successfully generated a new href
+      if (newHref && newHref !== currentHref) {
+        fallbackIcon.href = newHref;
+      }
     }
   }
 
