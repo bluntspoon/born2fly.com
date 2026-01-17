@@ -55,7 +55,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "/assets/images/team.png"
+      image: "/assets/images/logo.png"
 
 # Form Configuration (update after setting up Formspree)
 formspree_id: "xeoyprrn"
@@ -72,7 +72,7 @@ lang: en
 locale: en_ZA
 twitter:
   card: summary_large_image
-logo: /assets/images/logo.jpeg
+logo: /assets/images/logo.png
 
 # Schema.org settings
 organization:
