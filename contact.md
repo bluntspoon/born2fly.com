@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Contact Us
+title: "Contact Us"
 subtitle: Let's Start the Conversation
 permalink: /contact/
-description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or email."
+description: "Get in touch with Born2Fly Gymnastics via WhatsApp, phone, or email. Specialist adaptive gymnastics for schools across KwaZulu-Natal."
 ---
 <div class="contact-whatsapp">
   <h2>💬 WhatsApp Born2Fly</h2>
