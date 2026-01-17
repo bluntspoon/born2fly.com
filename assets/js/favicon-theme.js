@@ -4,13 +4,16 @@
 
   // Function to update favicon based on color scheme
   function updateFavicon(isDark) {
-    const svgIcon = document.querySelector('link[rel="icon"][type="image/svg+xml"]:not([media])');
-    if (svgIcon) {
-      const faviconPath = isDark 
-        ? '/assets/images/favicon-dark.svg' 
-        : '/assets/images/favicon-light.svg';
-      svgIcon.href = faviconPath;
-    }
+    // Find all SVG favicon links without media attribute
+    const svgIcons = document.querySelectorAll('link[rel="icon"][type="image/svg+xml"]:not([media])');
+    const faviconPath = isDark 
+      ? '/assets/images/favicon-dark.svg' 
+      : '/assets/images/favicon-light.svg';
+    
+    // Update all matching favicon links
+    svgIcons.forEach(function(icon) {
+      icon.href = faviconPath;
+    });
   }
 
   // Check if user's system prefers dark mode
