@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Our Team
+title: "Our Team"
 subtitle: Coaches Who Believe in Every Child
 permalink: /team/
-description: "Meet the Born2Fly coaching team - qualified, passionate professionals dedicated to adaptive gymnastics."
+description: "Meet the Born2Fly Gymnastics coaching team - qualified, passionate professionals dedicated to adaptive gymnastics across KwaZulu-Natal."
 ---
 
 <div style="max-width: 900px; margin: 2rem auto; text-align: center;">

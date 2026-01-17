@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Us & Services
+title: "About Us & Services"
 subtitle: Where Possibility Meets Movement
 permalink: /about/
 description: "Learn about Born2Fly Gymnastics, our mission, services, and adaptive gymnastics programmes across KwaZulu-Natal."
